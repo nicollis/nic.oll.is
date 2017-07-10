@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import { Row, Col } from 'react-bootstrap';
+import { Col } from 'react-bootstrap';
 import Header from './components/Header'
 import Bio from './components/Bio'
 import Section from './components/Section'
 import ToolboxShelf from './components/ToolboxShelf'
 import Timeline from './components/Timeline'
+import Contact from './components/Contact'
 import Footer from './components/Footer'
 import './App.css';
 
@@ -207,8 +208,11 @@ class App extends Component {
     return (
       <div>
         <div className="container max">
+        
           <Header />
+
           <Bio />
+
           <Section title="Techinical Toolbox">
             <Col md={8} mdOffset={2} id="toolbox">
               <ToolboxShelf title='High Level' tools={this.state.toolbox.filter((tool) => { return tool.level === 'high' })} />
@@ -217,63 +221,30 @@ class App extends Component {
               <ToolboxShelf title='Deploy' tools={this.state.toolbox.filter((tool) => { return tool.level === 'deploy' })} />
             </Col>
           </Section>
+
           <Section title='Projects Roadmap'>
             <Col xs={12}>
               <Timeline events={this.state.events}/>
             </Col>
           </Section>
+
           <Section title="Contact & Social">
-            
+            <Col xs={12} id="contact">
+              <Col md={6} mdOffset={3} className="contact-icons text-center">
+                <Contact to='mailto:nic@ollis.me'  icon='envelope' />
+                <Contact to='http://twitter.com/nic_ollis' icon='twitter' />
+                <Contact to='https://medium.com/program-practical' icon='medium' />
+                <Contact to='https://www.youtube.com/c/programpracticaltv' icon='youtube' />
+                <Contact to='https://www.linkedin.com/in/nicollis' icon='linkedin' />
+                <Contact to='https://github.com/nicollis' icon='github' />
+                <Contact to='http://codepen.io/nollis/' icon='codepen' />
+                <Contact to='' icon='skype' />
+              </Col>
+            </Col>
           </Section>
-          <Row>
-            <h2 className='text-center'>Contact & Social</h2>
-            <hr />
-            <div id="contact" className="">
-              <div className="contact-icons text-center col-md-6 col-md-offset-3">
-                <div className="col-xs-6 col-md-3 contact-wrapper">
-                  <a href="mailto:nic@ollis.me" target="_blank" rel="noopener noreferrer">
-                    <i className="fa fa-envelope fa-3x color-coral"></i>
-                  </a>
-                </div>
-                <div className="col-xs-6 col-md-3 contact-wrapper">
-                  <a href="http://twitter.com/nic_ollis" target="_blank" rel="noopener noreferrer">
-                    <i className="fa fa-twitter fa-3x color-coral"></i>
-                  </a>
-                </div>
-                <div className="col-xs-6 col-md-3 contact-wrapper">
-                  <a href="https://medium.com/program-practical" target="_blank" rel="noopener noreferrer">
-                    <i className="fa fa-medium fa-3x color-coral"></i>
-                  </a>
-                </div>
-                <div className="col-xs-6 col-md-3 contact-wrapper">
-                  <a href="https://www.youtube.com/c/programpracticaltv" target="_blank" rel="noopener noreferrer">
-                    <i className="fa fa-youtube fa-3x color-coral"></i>
-                  </a>
-                </div>
-                <div className="col-xs-6 col-md-3 contact-wrapper">
-                  <a href="https://www.linkedin.com/in/nicollis" target="_blank" rel="noopener noreferrer">
-                    <i className="fa fa-linkedin fa-3x color-coral"></i>
-                  </a>
-                </div>
-                <div className="col-xs-6 col-md-3 contact-wrapper">
-                  <a href="https://github.com/nicollis" target="_blank" rel="noopener noreferrer">
-                    <i className="fa fa-github fa-3x color-coral"></i>
-                  </a>
-                </div>
-                <div className="col-xs-6 col-md-3 contact-wrapper">
-                  <a href="http://codepen.io/nollis/" target="_blank" rel="noopener noreferrer">
-                    <i className="fa fa-codepen fa-3x color-coral"></i>
-                  </a>
-                </div>
-                <div className="col-xs-6 col-md-3 contact-wrapper">
-                  <div>
-                    <i className="fa fa-skype fa-3x color-coral"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </Row>
+
         </div>
+
         <Footer />
       </div>
     );
