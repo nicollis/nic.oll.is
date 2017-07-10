@@ -1,11 +1,41 @@
 import React, { Component } from 'react';
-import { Row } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 import Header from './components/Header'
 import Bio from './components/Bio'
 import Section from './components/Section'
+import ToolboxShelf from './components/ToolboxShelf'
 import './App.css';
 
 class App extends Component {
+  state = {
+    toolbox: [
+      {id: 'ruby', image: 'ruby-flat.svg', level: 'high'},
+      {id: 'rails', image: 'rails-logo.svg', level: 'high'},
+      {id: 'javascript', image: 'javascript.svg', level: 'high'},
+      {id: 'html5', image: 'html-5.svg', level: 'high'},
+      {id: 'sass', image: 'sass.svg', level: 'high'},
+      {id: 'react', image: 'react.svg', level: 'high'},
+      {id: 'angular', image: 'angular-icon.svg', level: 'mid'},
+      {id: 'swift', image: 'swift.svg', level: 'mid'},
+      {id: 'c++', image: 'c++.svg', level: 'mid'},
+      {id: 'postgresql', image: 'postgresql-wordmark.svg', level: 'mid'},
+      {id: 'redis', image: 'redis.svg', level: 'mid'},
+      {id: 'ios', image: 'ios.svg', level: 'mid'},
+      {id: 'elixir', image: 'elixir.png', level: 'low'},
+      {id: 'python', image: 'python.svg', level: 'low'},
+      {id: 'c', image: 'c.svg', level: 'low'},
+      {id: 'php', image: 'php-flat.svg', level: 'low'},
+      {id: 'nodejs', image: 'nodejs-icon.svg', level: 'low'},
+      {id: 'c-sharp', image: 'c-sharp.svg', level: 'low'},
+      {id: 'capistrano', image: 'capistrano.svg', level: 'deploy'},
+      {id: 'heroku', image: 'heroku.svg', level: 'deploy'},
+      {id: 'aws', image: 'aws-s3.svg', level: 'deploy'},
+      {id: 'google-cloud', image: 'google-cloud.svg', level: 'deploy'},
+      {id: 'firebase', image: 'firebase.svg', level: 'deploy'},
+      {id: 'github', image: 'github-icon.svg', level: 'deploy'},
+    ]
+  }
+
   render() {
     return (
       <div>
@@ -14,50 +44,12 @@ class App extends Component {
           <Bio />
 
           <Section title="Techinical Toolbox">
-            <div id="toolbox" className='col-md-8 col-md-offset-2'>
-
-              <h3>High Level</h3>
-              <hr />
-              <div className="icons col-lg-11 col-lg-offset-1 col-sm-offset-1 col-md-offset-0">
-                <img className="logos" src="./images/logos/ruby-flat.svg" alt="ruby logo" />
-                <img className="logos" src="./images/logos/rails-logo.svg" alt="rails logo" />
-                <img className="logos" data-toggle="popover" title="The Javascript Family" data-content="Experiance with Vanilla, ES6, CoffeeScript, and TypeScript." data-placement="top"  data-trigger="hover" src="./images/logos/javascript.svg"  alt="javascript logo" />
-                <img className="logos" data-toggle="popover" title="HTML and its Friends" data-content="HTML, Slim, HAML, ERB" data-placement="top"  data-trigger="hover" src="./images/logos/html-5.svg" alt="html logo" />
-                <img className="logos" data-toggle="popover" title="CSS++" data-content="CSS, less, Sass. Although let's be frank they are mostly the same." data-placement="top"  data-trigger="hover" src="./images/logos/css-3.svg" alt="css logo" />
-                <img className="logos" src="./images/logos/react.svg" alt="react logo" />
-              </div>
-              <h3>Mid Level</h3>
-              <hr />
-              <div className="icons col-lg-11 col-lg-offset-1 col-sm-offset-1 col-md-offset-0">
-                <img className="logos" alt="angular logo"  src="./images/logos/angular-icon.svg"/>
-                <img className="logos" alt="swift logo"  src="./images/logos/swift.svg"/>
-                <img className="logos" alt="c++ logo"  src="./images/logos/c++.svg"/>
-                <img className="logos" alt="postgresql logo"  src="./images/logos/postgresql-wordmark.svg"/>
-                <img className="logos" alt="redis logo"  src="./images/logos/redis.svg"/>
-                <img className="logos" alt="ios logo"  src="./images/logos/ios.svg"/>
-              </div>
-              <h3>Low Level</h3>
-              <hr />
-              <div className="icons col-lg-11 col-lg-offset-1 col-sm-offset-1 col-md-offset-0">
-                <img className="logos" alt="elixir logo"  src="./images/logos/elixir.png"/>
-                <img className="logos" alt="python logo"  src="./images/logos/python.svg"/>
-                <img className="logos" alt="c logo"  src="./images/logos/c.svg"/>
-                <img className="logos" alt="php logo"  src="./images/logos/php-flat.svg"/>
-                <img className="logos" alt="nodejs logo"  src="./images/logos/nodejs-icon.svg"/>
-                <img className="logos" alt="c-sharp logo"  src="./images/logos/c-sharp.svg"/>
-              </div>
-              <h3>Deploy</h3>
-              <hr />
-              <div className="icons col-lg-11 col-lg-offset-1 col-sm-offset-1 col-md-offset-0">
-                <img className="logos" alt="capistrano logo"  src="./images/logos/capistrano.svg"/>
-                <img className="logos" alt="heroku logo"  src="./images/logos/heroku.svg"/>
-                <img className="logos" alt="aws logo"  src="./images/logos/aws-s3.svg"/>
-                <img className="logos" alt="google cloud logo"  src="./images/logos/google-cloud.svg"/>
-                <img className="logos" alt="firebase logo"  src="./images/logos/firebase.svg"/>
-                <img className="logos" alt="github logo"  src="./images/logos/github-icon.svg"/>
-              </div>
-              <br />
-            </div>
+            <Col md={8} mdOffset={2} id="toolbox">
+              <ToolboxShelf title='High Level' tools={this.state.toolbox.filter((tool) => { return tool.level === 'high' })} />
+              <ToolboxShelf title='Mid Level' tools={this.state.toolbox.filter((tool) => { return tool.level === 'mid' })} />
+              <ToolboxShelf title='Low Level' tools={this.state.toolbox.filter((tool) => { return tool.level === 'low' })} />
+              <ToolboxShelf title='Deploy' tools={this.state.toolbox.filter((tool) => { return tool.level === 'deploy' })} />
+            </Col>
           </Section>
 
           <Row>
