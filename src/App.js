@@ -228,6 +228,14 @@ class App extends Component {
             </Col>
           </Section>
 
+          <Section title="Work History">
+          
+          </Section>
+
+          <Section title="Education">
+          
+          </Section>
+
           <Section title="Contact & Social">
             <Col xs={12} id="contact">
               <Col md={6} mdOffset={3} className="contact-icons text-center">

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Row, Col } from 'react-bootstrap'
 import FontAwesome from './FontAwesome'
-import Me from '../images/Me.png'
+import Me from '../images/Me.jpg'
 
 const Bio = () => {
   return (
