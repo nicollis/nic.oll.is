@@ -62,8 +62,8 @@ class App extends Component {
           { title: 'Rails 4', style: 'danger'},
           { title: 'CoffeeScript', style: 'primary'},
           { title: 'PostgreSQL', style: 'info'},
-          { title: 'Heroku', style: 'normal'},
-          { title: 'AWS S3', style: 'normal'},
+          { title: 'Heroku', style: 'default'},
+          { title: 'AWS S3', style: 'default'},
         ]
       },
       {
@@ -208,7 +208,7 @@ class App extends Component {
     return (
       <div>
         <div className="container max">
-        
+
           <Header />
 
           <Bio />

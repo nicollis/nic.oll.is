@@ -13,7 +13,7 @@ const TimelineEvent = (props) => {
           <p>{event.details}</p>
           <p>
             {event.tech && event.tech.map((item) => { return(
-              <Label bsStyle={item.style} className={item.class}>
+              <Label key={event.link+item.title} bsStyle={item.style} className={item.class}>
                 {item.title}
               </Label>
             ) })}

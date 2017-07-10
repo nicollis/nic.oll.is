@@ -36,7 +36,7 @@ class TimeLine extends Component {
   processYear = (year, year_events) => {
     return (<div>
       <dt>{year}</dt>
-      { year_events.map((event) => {return (<TimelineEvent event={event} pull={this.getPull()} />)})}
+      { year_events.map((event) => {return (<TimelineEvent key={event.link} event={event} pull={this.getPull()} />)})}
     </div>)
   }
 
