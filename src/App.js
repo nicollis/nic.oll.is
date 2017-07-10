@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Row } from 'react-bootstrap';
 import Header from './components/Header'
+import Bio from './components/Bio'
 import './App.css';
 
 class App extends Component {
@@ -9,23 +10,7 @@ class App extends Component {
       <div>
         <div className="container max">
           <Header />
-          <Row>
-            <div id="home" className="text-center">
-              <div className="row container">
-                <div className="col-sm-5 col-sm-offset-2 header-center-image">
-                  <img src="./images/nic_ollis_avatar.png" className="profile-pic" alt="profile pic" />
-                </div>
-                <div className="col-sm-5 header-center-title header">
-                  <div className="first-name header-center-name">Nic&nbsp;</div>
-                  <div className="last-name header-center-name">Ollis<span className='cursor' style={{position: 'absolute'}}></span></div>
-                  <div className="job-title color-coral">Software Eng</div>
-                </div>
-              </div>
-              <div className="text-left col-md-8 col-md-offset-2">
-                <div className="about"><i className="fa fa-quote-left fa-3x"></i>&nbsp;&nbsp;&nbsp;Hi, I'm Nic. I'm a <code>Software Engineer</code> located in Bloomington, Indiana that <code>specializes in making startups awesome</code>. I focus primarily on creating amazing websites using <code>Ruby on Rails</code>. As well, I also create apps for <code>iOS</code>. Looking for a new dev to join your team, or wanting to launch a new site/app? <a href="#contact"><code>Let's chat</code></a>.</div>
-              </div>
-            </div>
-          </Row>
+          <Bio />
 
           <Row>
             <h2 className='text-center'>Technical Toolbox</h2>
