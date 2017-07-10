@@ -4,6 +4,8 @@ import Header from './components/Header'
 import Bio from './components/Bio'
 import Section from './components/Section'
 import ToolboxShelf from './components/ToolboxShelf'
+import Timeline from './components/Timeline'
+import Footer from './components/Footer'
 import './App.css';
 
 class App extends Component {
@@ -33,6 +35,171 @@ class App extends Component {
       {id: 'google-cloud', image: 'google-cloud.svg', level: 'deploy'},
       {id: 'firebase', image: 'firebase.svg', level: 'deploy'},
       {id: 'github', image: 'github-icon.svg', level: 'deploy'},
+    ],
+    events: [
+      { // EXAMPLE EVENT
+        title: '',
+        details: '',
+        completedYear: 'example',
+        dateTag: '',
+        link: '',
+        dotColor: '',
+        dateColor: '',
+        tech: [
+          { title: '', style: '', class: ''},
+        ]
+      },
+      {
+        title: 'Comfort Crib',
+        details: 'AirBnB Clone being built along side a mentor to improve independence, and deeping my understanding of Rails.',
+        completedYear: 'in-progress',
+        dateTag: 'Feb \'17',
+        link: 'https://github.com/nicollis/comfort_crib',
+        dotColor: 'bg-coral',
+        dateColor: 'color-coral',
+        tech: [
+          { title: 'Rails 4', style: 'danger'},
+          { title: 'CoffeeScript', style: 'primary'},
+          { title: 'PostgreSQL', style: 'info'},
+          { title: 'Heroku', style: 'normal'},
+          { title: 'AWS S3', style: 'normal'},
+        ]
+      },
+      {
+        title: 'MyReads',
+        details: 'GoodReads Clone made in React for Udacity\'s React Nano Degree Program',
+        completedYear: '2017',
+        dateTag: 'Jul 8th',
+        link: 'https://github.com/nicollis/MyReads',
+        dotColor: 'bg-js',
+        dateColor: 'color-js',
+        tech: [
+          { title: 'ES6', style: 'normal', class: 'bg-js' },
+          { title: 'React', style: 'primary' },
+          { title: 'REST', style: 'success' },
+          { title: 'Heroku', style: 'normal' },
+        ]
+      },
+      {
+        title: 'ClusterForecast',
+        details: 'A small React project pulling in ClusterTruck\'s API and a Weather API to predict demand on their kitchen of any given day.',
+        completedYear: '2017',
+        dateTag: 'Jun 12th',
+        link: 'https://github.com/nicollis/ClusterForecast',
+        dotColor: 'bg-js',
+        dateColor: 'color-js',
+        tech: [
+          { title: 'ES6', style: 'normal', class: 'bg-js' },
+          { title: 'React', style: 'primary' },
+          { title: 'REST', style: 'success' },
+          { title: 'Heroku', style: 'normal' },
+        ]
+      },
+      {
+        title: 'Otter',
+        details: 'A simple twitter clone created as a playground for Rails 5. Testing out webpack and slim. Enabled GraphQL API for testing its implementation in Rails.',
+        completedYear: '2017',
+        dateTag: 'May 19th',
+        link: 'https://github.com/nicollis/otter',
+        dotColor: 'bg-coral',
+        dateColor: 'color-coral',
+        tech: [
+          { title: 'Rails 5', style: 'danger'},
+          { title: 'Slim', style: 'primary'},
+          { title: 'PostgreSQL', style: 'info'},
+          { title: 'GraphQL', style: 'success'},
+          { title: 'Heroku', style: 'normal'},
+          { title: 'AWS S3', style: 'normal'},
+        ]
+      },
+      {
+        title: 'Pitch Perfect',
+        details: 'App experimenting with controls avaliable for sound modulation via the AVAudioEngine in iOS.',
+        completedYear: '2017',
+        dateTag: 'May 1st',
+        link: 'https://github.com/nicollis/pitch-perfect',
+        dotColor: 'bg-swift',
+        dateColor: 'color-swift',
+        tech: [
+          { title: 'Swift', style: 'warning', class: 'bg-swift'},
+          { title: 'iOS 10', style: 'primary'},
+          { title: 'AVAudioEngine', style: 'info'},
+        ]
+      },
+      {
+        title: 'rubocop-git',
+        details: 'added in an --auto-correct flag that only runs rubocop and corrects changes based on your changes as seen by git.',
+        completedYear: '2017',
+        dateTag: 'Feb 18th',
+        link: 'https://github.com/nicollis/rubocop-git',
+        dotColor: 'bg-coral',
+        dateColor: 'color-coral',
+        tech: [
+          { title: 'Ruby', style: 'danger'},
+          { title: 'rubocop', style: 'danger'},
+          { title: 'git', style: 'normal'},
+        ]
+      },
+      {
+        title: 'GoodAsOldPhones',
+        details: 'A simple app while learning xcode, swift, and iOS 10',
+        completedYear: '2016',
+        dateTag: 'Nov 20th',
+        link: 'https://github.com/nicollis/GoodAsOldPhones',
+        dotColor: 'bg-swift',
+        dateColor: 'color-swift',
+        tech: [
+          { title: 'Swift', style: 'warning', class: 'bg-swift'},
+          { title: 'iOS 10', style: 'primary' },
+        ]
+      },
+      {
+        title: 'webfont-select',
+        details: 'A jQuery UI Widget to provide a simple dropdown select menu of Google Font\'s avaliable fonts. Including a search input to narrow down selectable fonts. Easily implementable in Rails by using the webfont-select-rails gem.',
+        completedYear: '2016',
+        dateTag: 'Nov 9th',
+        link: 'https://github.com/nicollis/webfont-select',
+        dotColor: 'bg-js',
+        dateColor: 'color-js',
+        tech: [
+          { title: 'CoffeeScript', style: 'primary'},
+          { title: 'Webfont Loader', style: 'info'},
+          { title: 'RubyGems', style: 'normal'},
+        ]
+      },
+      {
+        title: 'Pinteresting',
+        details: 'Pinterest clone written on Ruby on Rails, using ImageMagic for image processing and S3 storage.',
+        completedYear: '2016',
+        dateTag: 'Mar 5th',
+        link: 'https://github.com/nicollis/pinteresting',
+        dotColor: 'bg-coral',
+        dateColor: 'color-coral',
+        tech: [
+          { title: 'Rails 4', style: 'danger'},
+          { title: 'CoffeeScript', style: 'primary'},
+          { title: 'PostgreSQL', style: 'info'},
+          { title: 'Heroku', style: 'normal'},
+          { title: 'AWS S3', style: 'normal'},
+        ]
+      },
+      {
+        title: 'INCapitolHack',
+        details: 'Trial by fire, assisted in front end development while learning the MEAN stack in 24 hours.',
+        completedYear: '2016',
+        dateTag: 'Mar 1st',
+        link: 'https://github.com/nicollis/myigaservice',
+        dotColor: 'bg-js',
+        dateColor: 'color-js',
+        tech: [
+          { title: 'TypeScript', style: 'normal', class: 'bg-js'},
+          { title: 'AngularJS', style: 'primary'},
+          { title: 'NodeJS', style: 'primary'},
+          { title: 'ExpressJS', style: 'primary'},
+          { title: 'MongoDB', style: 'info'},
+          { title: 'REST', style: 'success'},
+        ]
+      },
     ]
   }
 
@@ -42,7 +209,6 @@ class App extends Component {
         <div className="container max">
           <Header />
           <Bio />
-
           <Section title="Techinical Toolbox">
             <Col md={8} mdOffset={2} id="toolbox">
               <ToolboxShelf title='High Level' tools={this.state.toolbox.filter((tool) => { return tool.level === 'high' })} />
@@ -51,237 +217,14 @@ class App extends Component {
               <ToolboxShelf title='Deploy' tools={this.state.toolbox.filter((tool) => { return tool.level === 'deploy' })} />
             </Col>
           </Section>
-
-          <Row>
-            <h2 className="text-center">Projects | Jobs</h2>
-            <hr />
-            <div id="projects" className='col-xs-12'>
-              <div className='timeline'>
-                <dl>
-                  <dt>In Progress</dt>
-                  {/* Comfort Crib */}
-                  <dd className="pos-left clearfix">
-                    <div className="circ bg-coral"></div>
-                    <div className="time color-coral">Feb '17</div>
-                    <a className="events" href="https://github.com/nicollis/comfort_crib" target="_blank" rel="noopener noreferrer">
-                      <div className="events-body">
-                        <h4 className="events-heading">Comfort Crib</h4>
-                        <p>
-                          AirBnB Clone being built along side a mentor to improve independence, and deeping my understanding of Rails.
-                        </p>
-                        <p>
-                          <span className="label label-danger">Rails 4</span>
-                          <span className="label label-primary">CoffeeScript</span>
-                          <span className="label label-info">PostgreSQL</span>
-                          <span className="label label-normal">Heroku</span>
-                          <span className="label label-normal">AWS S3</span>
-                        </p>
-                      </div>
-                    </a>
-                  </dd>
-                  {/* Proposable */}
-                  <dd className="pos-right clearfix">
-                    <div className="circ bg-coral"></div>
-                    <div className="time color-coral">May '16</div>
-                    <a className="events" href="https://proposable.com" target="_blank" rel="noopener noreferrer">
-                      <div className="events-body">
-                        <h4 className="events-heading">Proposable</h4>
-                        <p>
-                          As a Rails contractor for Proposable, I have implemented many new features and bug fixes including: User Collaboration, 
-                          Send from Gmail/Custom SMTP, Bulk CSV Uploads,CRM Integrations.
-                        </p>
-                        <p>
-                          <span className="label label-danger">Rails 4</span>
-                          <span className="label label-primary">AngularJS</span>
-                          <span className="label label-info">PostgreSQL</span>
-                          <span className="label label-info">Redis</span>
-                          <span className="label label-success">REST</span>
-                          <span className="label label-normal">Capistrano</span>
-                        </p>
-                      </div>
-                    </a>
-                  </dd>
-                  <dt>2017</dt>
-                  {/* ClusterForcast */}
-                  <dd className="pos-left clearfix">
-                    <div className="circ bg-js"></div>
-                    <div className="time color-js">Jun 12th</div>
-                    <a className="events" href="https://github.com/nicollis/ClusterForecast" target="_blank" rel="noopener noreferrer">
-                      <div className="events-body">
-                        <h4 className="events-heading">ClusterForecast</h4>
-                        <p>
-                          A small React project pulling in ClusterTruck's API and a Weather API to predict demand on their kitchen of any given day. 
-                        </p>
-                        <p>
-                          <span className="label label-normal bg-js">ES6</span>
-                          <span className="label label-primary">React</span>
-                          <span className="label label-success">REST</span>
-                          <span className="label label-normal">Heroku</span>
-                        </p>
-                      </div>
-                    </a>
-                  </dd>
-                  {/* Otter */}
-                  <dd className="pos-right clearfix">
-                    <div className="circ bg-coral"></div>
-                    <div className="time color-coral">May 19th</div>
-                    <a className="events" href="https://github.com/nicollis/otter" target="_blank" rel="noopener noreferrer">
-                      <div className="events-body">
-                        <h4 className="events-heading">Otter</h4>
-                        <p>
-                          A simple twitter clone created as a playground for Rails 5. Testing out webpack and slim.
-                          Enabled GraphQL API for testing its implementation in Rails.
-                        </p>
-                        <p>
-                          <span className="label label-danger">Rails 5</span>
-                          <span className="label label-primary">Slim</span>
-                          <span className="label label-info">PostgreSQL</span>
-                          <span className="label label-success">GraphQL</span>
-                          <span className="label label-normal">Heroku</span>
-                          <span className="label label-normal">AWS S3</span>
-                        </p>
-                      </div>
-                    </a>
-                  </dd>
-                  {/* Pitch Perfect */}
-                  <dd className="pos-left clearfix">
-                    <div className="circ bg-swift"></div>
-                    <div className="time color-swift">May 1st</div>
-                    <a className="events" href="https://github.com/nicollis/pitch-perfect" target="_blank" rel="noopener noreferrer">
-                      <div className="events-body">
-                        <h4 className="events-heading">Pitch Perfect</h4>
-                        <p>
-                          App experimenting with controls avaliable for sound modulation via the AVAudioEngine in iOS.
-                        </p>
-                        <p>
-                          <span className="label label-warning bg-swift">Swift</span>
-                          <span className="label label-primary">iOS 10</span>
-                          <span className="label label-info">AVAudioEngine</span>
-                        </p>
-                      </div>
-                    </a>
-                  </dd>
-                  {/* Rubocop-git */}
-                  <dd className="pos-right clearfix">
-                    <div className="circ bg-coral"></div>
-                    <div className="time color-coral">Feb 18th</div>
-                    <a className="events" href="https://github.com/nicollis/rubocop-git" target="_blank" rel="noopener noreferrer">
-                      <div className="events-body">
-                        <h4 className="events-heading">rubocop-git</h4>
-                        <p>
-                          added in an --auto-correct flag that only runs rubocop and corrects changes based on your changes as seen by git.
-                        </p>
-                        <p>
-                          <span className="label label-danger">Ruby</span>
-                          <span className="label label-danger">rubocop</span>
-                          <span className="label label-normal">git</span>
-                        </p>
-                      </div>
-                    </a>
-                  </dd>
-                  <dt>2016</dt>
-                  {/* GoodAsOldPhones */}
-                  <dd className="pos-left clearfix">
-                    <div className="circ bg-swift"></div>
-                    <div className="time color-swift">Nov 20th</div>
-                    <a className="events" href="https://github.com/nicollis/GoodAsOldPhones" target="_blank" rel="noopener noreferrer">
-                      <div className="events-body">
-                        <h4 className="events-heading">Good As Old Phones</h4>
-                        <p>
-                          A simple app while learning xcode, swift, and iOS 10
-                        </p>
-                        <p>
-                          <span className="label label-warning bg-swift">Swift</span>
-                          <span className="label label-primary">iOS 10</span>
-                        </p>
-                      </div>
-                    </a>
-                  </dd>
-                  {/* webfont-select */}
-                  <dd className="pos-right clearfix">
-                    <div className="circ"></div>
-                    <div className="time">Nov 9th</div>
-                    <a className="events" href="https://github.com/nicollis/webfont-select" target="_blank" rel="noopener noreferrer">
-                      <div className="events-body">
-                        <h4 className="events-heading">WebFont-Select</h4>
-                        <p>
-                          A jQuery UI Widget to provide a simple dropdown select menu of Google Font's avaliable fonts. 
-                          Including a search input to narrow down selectable fonts. Easily implementable in Rails by using the webfont-select-rails gem.
-                        </p>
-                        <p>
-                          <span className="label label-primary">CoffeeScript</span>
-                          <span className="label label-info">Webfont Loader</span>
-                          <span className="label label-normal">RubyGems</span>
-                        </p>
-                      </div>
-                    </a>
-                  </dd>
-                  {/* pentristing */}
-                  <dd className="pos-left clearfix">
-                    <div className="circ bg-coral"></div>
-                    <div className="time color-coral">Mar 5th</div>
-                    <a className="events" href="https://github.com/nicollis/pinteresting" target="_blank" rel="noopener noreferrer">
-                      <div className="events-body">
-                        <h4 className="events-heading">Pinteresting</h4>
-                        <p>
-                          Pinterest clone written on Ruby on Rails, using ImageMagic for image processing and S3 storage.
-                        </p>
-                        <p>
-                          <span className="label label-danger">Rails 4</span>
-                          <span className="label label-primary">CoffeeScript</span>
-                          <span className="label label-info">PostgreSQL</span>
-                          <span className="label label-normal">Heroku</span>
-                          <span className="label label-normal">AWS S3</span>
-                        </p>
-                      </div>
-                    </a>
-                  </dd>
-                  {/* INCapitolHack */}
-                  <dd className="pos-right clearfix">
-                    <div className="circ bg-js"></div>
-                    <div className="time color-js">Mar 1st</div>
-                    <a className="events" href="https://github.com/nicollis/myigaservice" target="_blank" rel="noopener noreferrer">
-                      <div className="events-body">
-                        <h4 className="events-heading">INCapitolHack</h4>
-                        <p>
-                          Trial by fire, assisted in front end development while learning the MEAN stack in 24 hours.
-                        </p>
-                        <p>
-                          <span className="label label-normal bg-js">TypeScript</span>
-                          <span className="label label-primary">AngularJS</span>
-                          <span className="label label-primary">ExpressJS</span>
-                          <span className="label label-info">MongoDB</span>
-                          <span className="label label-success">REST</span>
-                        </p>
-                      </div>
-                    </a>
-                  </dd>
-                  <dt>And More...</dt>
-                </dl>
-                {/* GitHub Info */}
-                <a className="col-md-6 col-md-offset-3" href="https://github.com/nicollis?tab=repositories" target="_blank" rel="noopener noreferrer">
-                  <div className="panel panel-default repo">
-                    <div className="panel-heading bg-coral">
-                      See more on GitHub
-                    </div>
-                    <div className="panel-body">
-                      I have many other projects done in my past and have uploaded anything I'm allowed to share on GitHub!
-                      Check out my page for more repo's including:
-                      <ul className="top-padding">
-                        <li>2D game engine written in C++</li>
-                        <li>BASIC-like language with interpreter written in Java</li>
-                        <li>C# script to import language templates for DrangonTN</li>
-                        <li>Many frontend projects playing with Javascript and CSS</li>
-                        <li>and more...</li>
-                      </ul>
-                      Between mentorships, self-projects, and pursuing Udacity's iOS Nanodegree there are constant updates happening on GitHub.
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </Row>
-
+          <Section title='Projects Roadmap'>
+            <Col xs={12}>
+              <Timeline events={this.state.events}/>
+            </Col>
+          </Section>
+          <Section title="Contact & Social">
+            
+          </Section>
           <Row>
             <h2 className='text-center'>Contact & Social</h2>
             <hr />
@@ -331,16 +274,7 @@ class App extends Component {
             </div>
           </Row>
         </div>
-
-        <div className="container-fluid no-padding">
-          <div className="col-xs-12 no-padding">
-            <div className="footer">
-              <div className="container">
-                <div className="footer-copyright header">Created by Ollis</div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <Footer />
       </div>
     );
   }
