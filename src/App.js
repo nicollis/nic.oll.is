@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Row } from 'react-bootstrap';
 import Header from './components/Header'
 import Bio from './components/Bio'
+import Section from './components/Section'
 import './App.css';
 
 class App extends Component {
@@ -12,9 +13,7 @@ class App extends Component {
           <Header />
           <Bio />
 
-          <Row>
-            <h2 className='text-center'>Technical Toolbox</h2>
-            <hr />
+          <Section title="Techinical Toolbox">
             <div id="toolbox" className='col-md-8 col-md-offset-2'>
 
               <h3>High Level</h3>
@@ -59,7 +58,7 @@ class App extends Component {
               </div>
               <br />
             </div>
-          </Row>
+          </Section>
 
           <Row>
             <h2 className="text-center">Projects | Jobs</h2>
