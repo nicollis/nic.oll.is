@@ -1,1 +1,192 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Raleway|Inconsolata');
+@import url('http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/bootflat/2.0.4/css/bootflat.css');
+@import url('http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css');
 
+
+.header, h1, h2, h3, h4, h5, .panel-heading {
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+  background: #F4F8FA;
+  font-family: 'Lato', sans-serif;
+}
+
+hr {
+  border-top: 1px solid #dbdbdb;
+}
+
+.row {
+  padding-bottom: 50px;
+}
+
+.no-padding {
+  padding: 0px;
+}
+
+.bold {font-weight: bold;}
+
+a{color: black;}
+a:hover{color: black;}
+a:active{color: black;}
+a:visited{color: black;}
+
+.first-name{
+  font-size: 4em;
+}
+.last-name{
+  font-size: 5em;
+  font-weight: bold;
+  margin: -25px 0px;
+}
+.job-title{
+  font-size: 3em;
+}
+
+.header-center-name {
+    display: inline-block;
+    font-size: 4em;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .header-center-name {
+        display: block;
+    }
+}
+
+.header-center-title {
+    text-align: center;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .header-center-title {
+        text-align: left;
+    }
+}
+
+.header-center-image {
+    text-align: center;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .header-center-image {
+        text-align: right;
+    }
+}
+
+.color-coral, .color-ruby{
+  color: #DA4453 !important;
+}
+
+.bg-coral, .bg-ruby{
+  background: #DA4453 !important;
+  color: white !important;
+}
+
+.color-swift{
+  color: #F69C37 !important;
+}
+
+.bg-swift{
+  background: #F69C37 !important;
+}
+
+.color-js{
+  color: #dccb43 !important;
+}
+
+.bg-js{
+  background: #EDDB48 !important;
+  color: #616161;
+}
+
+.icons{
+  font-size: 5.5em;
+  text-align: center;
+}
+.logos {
+  vertical-align: text-top;
+  width: 77px;
+  height: 77px;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .icons {
+        text-align: left;
+    }
+}
+
+.about{
+  font-size: 1.3em;
+  margin: 0px 20px;
+}
+
+.max
+{
+  max-width: 1400px;
+}
+
+.profile-pic{
+  border-radius: 50%;
+  border: #CCD1D9 8px solid;
+  width: 280px;
+}
+.pb-left{
+  border-left: 6px solid #DA4453;
+  margin-left: 5%;
+  padding-left: 15px;
+}
+.pb-right{
+  border-right: 6px solid #DA4453;
+  margin-right: 5%;
+  padding-right: 15px;
+  text-align: right;
+}
+.projectbox p{
+  font-size: 1.25em;
+}
+.projectbox h4{
+  font-size: 2em;
+  color: #DA4453;
+}
+.projectbox h5{
+  font-size: 2em;
+  color: #DA4453;
+  font-weight: bold;
+}
+.contact-wrapper{
+  margin-bottom: 40px;
+}
+
+.footer{
+  margin-top: 100px;
+}
+
+.events:hover, .repo:hover{
+  border: solid 1px #CCC;
+  -moz-box-shadow: 1px 1px 5px #999;
+  -webkit-box-shadow: 1px 1px 5px #999;
+  box-shadow: 1px 1px 5px #999;
+  transform: scale(1.05, 1.05);
+  transition: all 0.2s ease-in-out;
+}
+.events, .repo{
+  transition: all 0.2s ease-out;
+}
+
+.top-padding {
+  padding-top: 10px;
+}
+
+.footer {
+ background-color: #DA4453;
+}
+
+.footer-copyright {
+  color: #f9f2f4;
+}

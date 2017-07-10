@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Row } from 'react-bootstrap';
+import Header from './components/Header'
 import './App.css';
 
 class App extends Component {
@@ -6,15 +8,8 @@ class App extends Component {
     return (
       <div>
         <div className="container max">
-          <div className="row">
-            <div className="btn-group pull-right top-padding">
-                <a href="#toolbox" type="button" className="button btn btn-danger bg-coral" data-toggle="tooltip" data-placement="bottom" title='Toolbox'><i className="fa fa-wrench"></i></a>
-                <a href="#projects" type="button" className="button btn btn-danger bg-coral" data-toggle="tooltip" data-placement="bottom" title='Projects'><i className="fa fa-code"></i></a>
-                <a href="#contact" type="button" className="button btn btn-danger bg-coral" data-toggle="tooltip" data-placement="bottom" title='Contact'><i className="fa fa-phone"></i></a>
-                <a href="https://medium.com/program-practical" type="button" className="button btn btn-danger bg-coral" data-toggle="tooltip" data-placement="bottom" title='Blog'><i className="fa fa-pencil"></i></a>
-              </div>
-          </div>
-          <div className="row">
+          <Header />
+          <Row>
             <div id="home" className="text-center">
               <div className="row container">
                 <div className="col-sm-5 col-sm-offset-2 header-center-image">
@@ -30,9 +25,9 @@ class App extends Component {
                 <div className="about"><i className="fa fa-quote-left fa-3x"></i>&nbsp;&nbsp;&nbsp;Hi, I'm Nic. I'm a <code>Software Engineer</code> located in Bloomington, Indiana that <code>specializes in making startups awesome</code>. I focus primarily on creating amazing websites using <code>Ruby on Rails</code>. As well, I also create apps for <code>iOS</code>. Looking for a new dev to join your team, or wanting to launch a new site/app? <a href="#contact"><code>Let's chat</code></a>.</div>
               </div>
             </div>
-          </div>
+          </Row>
 
-          <div className="row">
+          <Row>
             <h2 className='text-center'>Technical Toolbox</h2>
             <hr />
             <div id="toolbox" className='col-md-8 col-md-offset-2'>
@@ -48,7 +43,7 @@ class App extends Component {
                 <img className="logos" src="./images/logos/react.svg" alt="react logo" />
               </div>
               <h3>Mid Level</h3>
-              <hr />>
+              <hr />
               <div className="icons col-lg-11 col-lg-offset-1 col-sm-offset-1 col-md-offset-0">
                 <img className="logos" alt="angular logo"  src="./images/logos/angular-icon.svg"/>
                 <img className="logos" alt="swift logo"  src="./images/logos/swift.svg"/>
@@ -79,9 +74,9 @@ class App extends Component {
               </div>
               <br />
             </div>
-          </div>
+          </Row>
 
-          <div className="row">
+          <Row>
             <h2 className="text-center">Projects | Jobs</h2>
             <hr />
             <div id="projects" className='col-xs-12'>
@@ -309,9 +304,9 @@ class App extends Component {
                 </a>
               </div>
             </div>
-          </div>
+          </Row>
 
-          <div className="row">
+          <Row>
             <h2 className='text-center'>Contact & Social</h2>
             <hr />
             <div id="contact" className="">
@@ -358,7 +353,7 @@ class App extends Component {
                 </div>
               </div>
             </div>
-          </div>
+          </Row>
         </div>
 
         <div className="container-fluid no-padding">
