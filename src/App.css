@@ -112,6 +112,17 @@ a:visited{color: black;}
   vertical-align: text-top;
   width: 77px;
   height: 77px;
+  margin: 0 10px;
+}
+
+.logo-small {
+  width: 30px;
+  height: 30px;
+  margin: 5px 3px;
+}
+
+.label {
+  margin-left: 2px;
 }
 
 /* Small devices (tablets, 768px and up) */
@@ -189,4 +200,18 @@ a:visited{color: black;}
 
 .footer-copyright {
   color: #f9f2f4;
+}
+
+.career-logo {
+  width: 100%;
+}
+
+.career-left {
+  display: inline-block;
+  vertical-align: bottom;
+  margin-right: 20px;
+}
+
+.career-right {
+  display: inline-block;
 }

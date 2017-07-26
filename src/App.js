@@ -5,9 +5,12 @@ import Bio from './components/Bio'
 import Section from './components/Section'
 import ToolboxShelf from './components/ToolboxShelf'
 import Timeline from './components/Timeline'
+import Job from './components/Job'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
-import './App.css';
+import './App.css'
+import ClusterTruck from './images/ClusterTruck.png'
+import Proposable from './images/Proposable.png'
 
 class App extends Component {
   state = {
@@ -32,7 +35,7 @@ class App extends Component {
       {id: 'c-sharp', image: 'c-sharp.svg', level: 'low'},
       {id: 'capistrano', image: 'capistrano.svg', level: 'deploy'},
       {id: 'heroku', image: 'heroku.svg', level: 'deploy'},
-      {id: 'aws', image: 'aws-s3.svg', level: 'deploy'},
+      {id: 'saltstack', image: 'saltstack.svg', level: 'deploy'},
       {id: 'google-cloud', image: 'google-cloud.svg', level: 'deploy'},
       {id: 'firebase', image: 'firebase.svg', level: 'deploy'},
       {id: 'github', image: 'github-icon.svg', level: 'deploy'},
@@ -201,6 +204,46 @@ class App extends Component {
           { title: 'REST', style: 'success'},
         ]
       },
+    ],
+    career: [
+      {
+        logo: ClusterTruck,
+        title: "Software Engineer",
+        dates: "07-2017 | ...",
+        company: "ClusterTruck",
+        description: "Working hard to put 🌮 in the ☁️  by developing apps for Web and Mobile for internal and external use.",
+        tech: [
+          {id: 'ruby', image: 'ruby.svg'},
+          {id: 'rails', image: 'rails-logo.svg'},
+          {id: 'javascript', image: 'javascript.svg'},
+          {id: 'react', image: 'react.svg'},
+          {id: 'swift', image: 'swift.svg'},
+          {id: 'ios', image: 'apple.svg'},
+          {id: 'java', image: 'java.svg'},
+          {id: 'android', image: 'android-icon.svg'},
+          {id: 'elixir', image: 'elixir.png'},
+          {id: 'phoenix', image: 'phoenix.svg'},
+          {id: 'postgres', image: 'postgresql.svg'},
+          {id: 'redis', image: 'redis.svg'},
+          {id: 'salt', image: 'saltstack.svg'},
+        ]
+      },
+      {
+        logo: Proposable,
+        title: "Rails Developer",
+        company: "Proposable",
+        dates: "05-2016 | 07-2017",
+        description: "Developing a web based Proposal creation, tracking, and sell analystics tools.",
+        tech: [
+          {id: 'ruby', image: 'ruby.svg'},
+          {id: 'rails', image: 'rails-logo.svg'},
+          {id: 'CoffeeScript', image: 'coffeescript.svg'},
+          {id: 'angular', image: 'angular-icon.svg'},
+          {id: 'postgres', image: 'postgresql.svg'},
+          {id: 'redis', image: 'redis.svg'},
+          {id: 'capistrano', image: 'capistrano.svg'},
+        ]
+      }
     ]
   }
 
@@ -222,18 +265,14 @@ class App extends Component {
             </Col>
           </Section>
 
+          <Section title="Career Development">
+            { this.state.career.map((job) => {return(<Job details={job}/>)}) }
+          </Section>
+
           <Section title='Projects Roadmap'>
             <Col xs={12}>
               <Timeline events={this.state.events}/>
             </Col>
-          </Section>
-
-          <Section title="Work History">
-          
-          </Section>
-
-          <Section title="Education">
-          
           </Section>
 
           <Section title="Contact & Social">
