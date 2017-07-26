@@ -15,12 +15,12 @@ import Proposable from './images/Proposable.png'
 class App extends Component {
   state = {
     toolbox: [
-      {id: 'ruby', image: 'ruby-flat.svg', level: 'high'},
+      {id: 'ruby', image: 'ruby.svg', level: 'high'},
       {id: 'rails', image: 'rails-logo.svg', level: 'high'},
       {id: 'javascript', image: 'javascript.svg', level: 'high'},
-      {id: 'html5', image: 'html-5.svg', level: 'high'},
       {id: 'sass', image: 'sass.svg', level: 'high'},
       {id: 'react', image: 'react.svg', level: 'high'},
+      {id: 'redux', image: 'redux.svg', level: 'high'},
       {id: 'angular', image: 'angular-icon.svg', level: 'mid'},
       {id: 'swift', image: 'swift.svg', level: 'mid'},
       {id: 'c++', image: 'c++.svg', level: 'mid'},
@@ -54,19 +54,18 @@ class App extends Component {
         ]
       },
       {
-        title: 'Comfort Crib',
-        details: 'AirBnB Clone being built along side a mentor to improve independence, and deeping my understanding of Rails.',
+        title: 'React Nanodegree from Udacity',
+        details: 'React traning from "React Traning" provided by Udacity with solid grounding in React, Redux, and React Native',
         completedYear: 'in-progress',
-        dateTag: 'Feb \'17',
-        link: 'https://github.com/nicollis/comfort_crib',
-        dotColor: 'bg-coral',
-        dateColor: 'color-coral',
+        dateTag: 'July \'17',
+        link: 'https://www.udacity.com/course/react-nanodegree--nd019',
+        dotColor: 'bg-js',
+        dateColor: 'color-js',
         tech: [
-          { title: 'Rails 4', style: 'danger'},
-          { title: 'CoffeeScript', style: 'primary'},
-          { title: 'PostgreSQL', style: 'info'},
-          { title: 'Heroku', style: 'default'},
-          { title: 'AWS S3', style: 'default'},
+          { title: 'ES6', style: 'normal', class: 'bg-js' },
+          { title: 'React', style: 'primary' },
+          { title: 'Redux', style: 'primary' },
+          { title: 'React Native', style: 'primary' },
         ]
       },
       {
@@ -80,6 +79,7 @@ class App extends Component {
         tech: [
           { title: 'ES6', style: 'normal', class: 'bg-js' },
           { title: 'React', style: 'primary' },
+          { title: 'Redux', style: 'primary' },
           { title: 'REST', style: 'success' },
           { title: 'Heroku', style: 'normal' },
         ]
@@ -237,6 +237,7 @@ class App extends Component {
         tech: [
           {id: 'ruby', image: 'ruby.svg'},
           {id: 'rails', image: 'rails-logo.svg'},
+          {id: 'haml', image: 'haml.svg'},
           {id: 'CoffeeScript', image: 'coffeescript.svg'},
           {id: 'angular', image: 'angular-icon.svg'},
           {id: 'postgres', image: 'postgresql.svg'},
