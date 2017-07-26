@@ -14,7 +14,7 @@ const Bio = () => {
             </Col>
             <Col sm={5} className="header-center-title header">
               <div className="first-name header-center-name">Nic&nbsp;</div>
-              <div className="last-name header-center-name">Ollis<span className='cursor' style={{position: 'absolute'}}></span></div>
+              <div className="last-name header-center-name">Ollis<span className='cursor blinking-cursor' style={{position: 'absolute'}}>_</span></div>
               <div className="job-title color-coral">Software Eng</div>
             </Col>
           </Row>
