@@ -1,7 +1,7 @@
 {
-  "name": "ollis-me",
+  "name": "ollis",
   "version": "1.0.0",
-  "homepage": "http://ollis.me/",
+  "homepage": "https://oll.is/",
   "private": true,
   "dependencies": {
     "prop-types": "^15.5.10",

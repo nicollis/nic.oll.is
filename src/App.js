@@ -279,7 +279,7 @@ class App extends Component {
           <Section title="Contact & Social">
             <Col xs={12} id="contact">
               <Col md={6} mdOffset={3} className="contact-icons text-center">
-                <Contact to='mailto:nic@ollis.me'  icon='envelope' />
+                <Contact to='mailto:nic@oll.is'  icon='envelope' />
                 <Contact to='http://twitter.com/nic_ollis' icon='twitter' />
                 <Contact to='https://medium.com/program-practical' icon='medium' />
                 <Contact to='https://www.youtube.com/c/programpracticaltv' icon='youtube' />
