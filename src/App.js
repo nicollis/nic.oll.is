@@ -69,6 +69,22 @@ class App extends Component {
         ]
       },
       {
+        title: 'Readable',
+        details: 'A Reddit clone built with React & Redux for Udacity\'s React Nano Degree Program',
+        completedYear: '2017',
+        dateTag: 'Sep 16th',
+        link: 'https://github.com/nicollis/Readable',
+        dotColor: 'bg-js',
+        dateColor: 'color-js',
+        tech: [
+          { title: 'ES6', style: 'normal', class: 'bg-js' },
+          { title: 'React', style: 'primary' },
+          { title: 'Redux', style: 'primary' },
+          { title: 'REST', style: 'success' },
+          { title: 'Firebase', style: 'normal' },
+        ]
+      },
+      {
         title: 'MyReads',
         details: 'GoodReads Clone made in React for Udacity\'s React Nano Degree Program',
         completedYear: '2017',
@@ -79,7 +95,6 @@ class App extends Component {
         tech: [
           { title: 'ES6', style: 'normal', class: 'bg-js' },
           { title: 'React', style: 'primary' },
-          { title: 'Redux', style: 'primary' },
           { title: 'REST', style: 'success' },
           { title: 'Heroku', style: 'normal' },
         ]
