@@ -54,18 +54,31 @@ class App extends Component {
         ]
       },
       {
-        title: 'React Nanodegree from Udacity',
-        details: 'React traning from "React Traning" provided by Udacity with solid grounding in React, Redux, and React Native',
+        title: 'iOS Nanodegree from Udacity',
+        details: 'Udacity program for iOS developmet built in part with AT&T, Lyft, and Google',
         completedYear: 'in-progress',
-        dateTag: 'July \'17',
-        link: 'https://www.udacity.com/course/react-nanodegree--nd019',
+        dateTag: 'Oct \'17',
+        link: 'https://www.udacity.com/course/ios-developer-nanodegree--nd003',
+        dotColor: 'bg-swift',
+        dateColor: 'color-swift',
+        tech: [
+          { title: 'Swift', style: 'normal', class: 'bg-swift' },
+          { title: 'iOS', style: 'primary' },
+        ]
+      },
+      {
+        title: 'Mobile Flashcards',
+        details: 'A small flashcard app written in React Native for the React Nanodegree Program',
+        completedYear: '2017',
+        dateTag: 'Oct 14th',
+        link: 'https://github.com/nicollis/Cards',
         dotColor: 'bg-js',
         dateColor: 'color-js',
         tech: [
           { title: 'ES6', style: 'normal', class: 'bg-js' },
           { title: 'React', style: 'primary' },
           { title: 'Redux', style: 'primary' },
-          { title: 'React Native', style: 'primary' },
+          { title: 'React Native', style: 'normal' },
         ]
       },
       {
