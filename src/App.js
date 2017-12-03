@@ -15,18 +15,18 @@ import Proposable from './images/Proposable.png'
 class App extends Component {
   state = {
     toolbox: [
+      {id: 'swift', image: 'swift.svg', level: 'high'},
+      {id: 'apple', image: 'apple.svg', level: 'high'},
       {id: 'ruby', image: 'ruby.svg', level: 'high'},
       {id: 'rails', image: 'rails-logo.svg', level: 'high'},
       {id: 'javascript', image: 'javascript.svg', level: 'high'},
-      {id: 'sass', image: 'sass.svg', level: 'high'},
       {id: 'react', image: 'react.svg', level: 'high'},
-      {id: 'redux', image: 'redux.svg', level: 'high'},
       {id: 'angular', image: 'angular-icon.svg', level: 'mid'},
-      {id: 'swift', image: 'swift.svg', level: 'mid'},
       {id: 'c++', image: 'c++.svg', level: 'mid'},
       {id: 'postgresql', image: 'postgresql-wordmark.svg', level: 'mid'},
       {id: 'redis', image: 'redis.svg', level: 'mid'},
-      {id: 'ios', image: 'ios.svg', level: 'mid'},
+      {id: 'kitura', image: 'kitura.svg', level: 'mid'},
+      {id: 'arkit', image: 'arkit.png', level: 'mid'},
       {id: 'elixir', image: 'elixir.png', level: 'low'},
       {id: 'python', image: 'python.svg', level: 'low'},
       {id: 'c', image: 'c.svg', level: 'low'},
@@ -54,16 +54,17 @@ class App extends Component {
         ]
       },
       {
-        title: 'iOS Nanodegree from Udacity',
-        details: 'Udacity program for iOS developmet built in part with AT&T, Lyft, and Google',
+        title: 'ARkit Foundation Nanodegree from Udacity',
+        details: 'Udacity program for iOS developmet',
         completedYear: 'in-progress',
-        dateTag: 'Oct \'17',
-        link: 'https://www.udacity.com/course/ios-developer-nanodegree--nd003',
+        dateTag: 'Dec \'17',
+        link: 'https://www.udacity.com/course/learn-arkit--nd114#',
         dotColor: 'bg-swift',
         dateColor: 'color-swift',
         tech: [
           { title: 'Swift', style: 'normal', class: 'bg-swift' },
           { title: 'iOS', style: 'primary' },
+          { title: 'ARkit', style: 'info'},
         ]
       },
       {

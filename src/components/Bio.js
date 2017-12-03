@@ -22,10 +22,10 @@ const Bio = () => {
         <Col md={8} mdOffset={2} className="text-left">
           <div className="about"><FontAwesome icon='quote-left' size={3}/>&nbsp;&nbsp;&nbsp;
           Hi, I'm Nic. I'm a <code>Software Engineer</code> 
-          located in Bloomington, Indiana that <code>specializes in making startups awesome</code>. 
-          I focus primarily on creating amazing websites using <code>Ruby on Rails</code>. 
-          As well, I also create apps for <code>iOS</code>. Looking for a new dev to join your team, 
-          or wanting to launch a new site/app? <a href="#contact"><code>Let's chat</code></a>.</div>
+          located in Indianapolis, Indiana that <code>specializes in making startups awesome</code>. 
+          I focus primarily on creating amazing apps for <code>iOS in swift.</code> 
+          As well, I also create websites in <code>Ruby on Rails</code>. Looking for a new dev to join your team, 
+          or wanting to build a new app/launch a new site? <a href="#contact"><code>Let's chat</code></a>.</div>
         </Col>
       </div>
     </Row>
