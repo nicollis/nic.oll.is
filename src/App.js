@@ -11,6 +11,7 @@ import Footer from './components/Footer'
 import './App.css'
 import ClusterTruck from './images/ClusterTruck.png'
 import Proposable from './images/Proposable.png'
+import Udacity from './images/udacity.png'
 
 class App extends Component {
   state = {
@@ -24,9 +25,9 @@ class App extends Component {
       {id: 'angular', image: 'angular-icon.svg', level: 'mid'},
       {id: 'c++', image: 'c++.svg', level: 'mid'},
       {id: 'postgresql', image: 'postgresql-wordmark.svg', level: 'mid'},
-      {id: 'redis', image: 'redis.svg', level: 'mid'},
-      {id: 'kitura', image: 'kitura.svg', level: 'mid'},
-      {id: 'arkit', image: 'arkit.png', level: 'mid'},
+      {id: 'android', image: 'android-icon.svg', level: 'mid'},
+      {id: 'java', image: 'java.svg', level: 'mid'},
+      {id: 'kotlin', image: 'kotlin.svg', level: 'mid'},
       {id: 'elixir', image: 'elixir.png', level: 'low'},
       {id: 'python', image: 'python.svg', level: 'low'},
       {id: 'c', image: 'c.svg', level: 'low'},
@@ -38,7 +39,7 @@ class App extends Component {
       {id: 'saltstack', image: 'saltstack.svg', level: 'deploy'},
       {id: 'google-cloud', image: 'google-cloud.svg', level: 'deploy'},
       {id: 'firebase', image: 'firebase.svg', level: 'deploy'},
-      {id: 'github', image: 'github-icon.svg', level: 'deploy'},
+      {id: 'aws', image: 'aws-ec2.svg', level: 'deploy'},
     ],
     events: [
       { // EXAMPLE EVENT
@@ -53,18 +54,46 @@ class App extends Component {
           { title: '', style: '', class: ''},
         ]
       },
-      {
-        title: 'ARkit Foundation Nanodegree from Udacity',
-        details: 'Udacity program for iOS developmet',
+
+      { 
+        title: 'iOS Playgrounds',
+        details: 'An group of playgrounds of small examples of experimenting with iOS development',
         completedYear: 'in-progress',
-        dateTag: 'Dec \'17',
-        link: 'https://www.udacity.com/course/learn-arkit--nd114#',
+        dateTag: 'Jan \'18',
+        link: 'https://github.com/nicollis/iOS-Playgrounds',
         dotColor: 'bg-swift',
         dateColor: 'color-swift',
         tech: [
-          { title: 'Swift', style: 'normal', class: 'bg-swift' },
-          { title: 'iOS', style: 'primary' },
-          { title: 'ARkit', style: 'info'},
+          { title: 'Swift', style: 'normal', class: 'bg-swift'},
+          { title: 'iOS', style: 'primary', class: ''},
+          { title: 'CoreML', style: 'info', class: ''},
+          { title: 'ARKit', style: 'info', class: ''},
+        ]
+      },
+      {
+        title: 'Grow with Google',
+        details: 'A scholarship to learn Android Development from Google and Udacity',
+        completedYear: 'in-progress',
+        dateTag: 'Feb \'18',
+        link: 'https://www.udacity.com/grow-with-google',
+        dotColor: 'bg-java',
+        dateColor: 'color-java',
+        tech: [
+          { title: 'Java', style: 'normal', class: 'bg-java' },
+          { title: 'Android', style: 'primary' },        ]
+      },
+      { 
+        title: 'Swift Playgrounds',
+        details: 'A small collection of playgrounds broken into projects while experimenting with swift',
+        completedYear: '2017',
+        dateTag: 'Dec 17th',
+        link: 'https://github.com/nicollis/Swift-Playgrounds',
+        dotColor: 'bg-swift',
+        dateColor: 'color-swift',
+        tech: [
+          { title: 'Swift', style: 'normal', class: 'bg-swift'},
+          { title: 'iOS', style: 'primary', class: ''},
+          { title: 'CoreData', style: 'info', class: ''},
         ]
       },
       {
@@ -236,18 +265,29 @@ class App extends Component {
     ],
     career: [
       {
+        logo: Udacity,
+        title: "Mentor & Reviewer",
+        dates: "10-2017 | ...",
+        company: "Udacity",
+        description: "Working 1-on-1 with students in the React program to help them make progress, keep on track, and reach graduation. I also review projects students submitted for their certification.",
+        tech: [
+          {id: 'react', image: 'react.svg'},
+          {id: 'javascript', image: 'javascript.svg'}
+        ]
+      },
+      {
         logo: ClusterTruck,
         title: "Software Engineer",
-        dates: "07-2017 | ...",
+        dates: "07-2017 | 03-2018",
         company: "ClusterTruck",
-        description: "Working hard to put 🌮 in the ☁️  by developing apps for Web and Mobile for internal and external use.",
+        description: "Lead development of the driver products. Build out managment system and dashboard. Refactored and Redesigned native mobile apps written in Swift and Java. Managed beta groups and communication with drivers to develop and address their needs.",
         tech: [
+          {id: 'swift', image: 'swift.svg'},
+          {id: 'ios', image: 'apple.svg'},
           {id: 'ruby', image: 'ruby.svg'},
           {id: 'rails', image: 'rails-logo.svg'},
           {id: 'javascript', image: 'javascript.svg'},
           {id: 'react', image: 'react.svg'},
-          {id: 'swift', image: 'swift.svg'},
-          {id: 'ios', image: 'apple.svg'},
           {id: 'java', image: 'java.svg'},
           {id: 'android', image: 'android-icon.svg'},
           {id: 'elixir', image: 'elixir.png'},
@@ -315,7 +355,7 @@ class App extends Component {
                 <Contact to='https://www.linkedin.com/in/nicollis' icon='linkedin' />
                 <Contact to='https://github.com/nicollis' icon='github' />
                 <Contact to='http://codepen.io/nollis/' icon='codepen' />
-                <Contact to='' icon='skype' />
+                <Contact to='https://calendly.com/nollis' icon='calendar' />
               </Col>
             </Col>
           </Section>

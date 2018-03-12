@@ -95,6 +95,22 @@ a:visited{color: black;}
   background: #F69C37 !important;
 }
 
+.color-android {
+  color: #AECD5D !important;
+}
+
+.bg-android {
+  background: #AECD5D !important;
+}
+
+.color-java {
+  color: #5E94AF !important;
+}
+
+.bg-java {
+  background: #5E94AF !important;
+}
+
 .color-js{
   color: #dccb43 !important;
 }
