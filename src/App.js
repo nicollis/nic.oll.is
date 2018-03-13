@@ -280,7 +280,7 @@ class App extends Component {
         title: "Software Engineer",
         dates: "07-2017 | 03-2018",
         company: "ClusterTruck",
-        description: "Lead development of the driver products. Build out managment system and dashboard. Refactored and Redesigned native mobile apps written in Swift and Java. Managed beta groups and communication with drivers to develop and address their needs.",
+        description: "Led development of the driver products. Build out managment system and dashboard. Refactored and Redesigned native mobile apps written in Swift and Java. Managed beta groups and communication with drivers to develop and address their needs.",
         tech: [
           {id: 'swift', image: 'swift.svg'},
           {id: 'ios', image: 'apple.svg'},
