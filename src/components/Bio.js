@@ -21,11 +21,9 @@ const Bio = () => {
         </div>
         <Col md={8} mdOffset={2} className="text-left">
           <div className="about"><FontAwesome icon='quote-left' size={3}/>&nbsp;&nbsp;&nbsp;
-          Hi, I'm Nic. I'm a <code>Software Engineer</code> located in Indianapolis, Indiana. 
-          I focus primarily on creating amazing applications for <code>iOS using Swift.</code> 
-          As a full stack mobile engineer, I have implemented solutions from not only the mobile side, 
-          but <code>server side and web front ends.</code> I have a history of <code>fostering developer growth</code>, though mentorships,
-          speaking at meet up groups, and online tutorials. Looking for a new dev to join your team, 
+          Hi, I’m Nic, a <code>Software Engineer</code> located in Indianapolis, Indiana, who loves creating amazing applications.
+          I develop solutions for not only the <code>mobile</code> but <code>server and web</code> as well. I have a passion for <code>fostering developer growth</code> 
+          and do so, through mentorships, speaking to groups, and creating tutorials. Looking for a new dev to join your team, 
           or wanting to build a new app/launch a new site? <a href="#contact"><code>Let's chat</code></a>.</div>
         </Col>
       </div>
