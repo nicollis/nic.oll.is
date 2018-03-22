@@ -32,6 +32,8 @@ a:hover{color: black;}
 a:active{color: black;}
 a:visited{color: black;}
 
+.training-link{color: #535D66}
+
 .first-name{
   font-size: 4em;
 }
