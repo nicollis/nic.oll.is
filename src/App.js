@@ -354,7 +354,7 @@ class App extends Component {
                 <Contact to='https://www.youtube.com/c/programpracticaltv' icon='youtube' />
                 <Contact to='https://www.linkedin.com/in/nicollis' icon='linkedin' />
                 <Contact to='https://github.com/nicollis' icon='github' />
-                <Contact to='http://codepen.io/nollis/' icon='codepen' />
+                <Contact to='https://stackoverflow.com/story/ollis' icon='stack-overflow' />
                 <Contact to='https://calendly.com/nollis' icon='calendar' />
               </Col>
             </Col>
