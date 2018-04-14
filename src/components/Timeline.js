@@ -45,8 +45,8 @@ class TimeLine extends Component {
       <div className='timeline'>
         <dl>
           { this.processYear('In Progress', this.props.events.filter((event) => { return event.completedYear === 'in-progress' })) }
+          { this.processYear(2018, this.props.events.filter((event) => { return event.completedYear === '2018' })) }
           { this.processYear(2017, this.props.events.filter((event) => { return event.completedYear === '2017' })) }
-          { this.processYear(2016, this.props.events.filter((event) => { return event.completedYear === '2016' })) }
           <dt>And More...</dt>
         </dl>
         {/* GitHub Info */}

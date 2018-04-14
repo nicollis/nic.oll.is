@@ -56,6 +56,19 @@ class App extends Component {
           { title: '', style: '', class: ''},
         ]
       },
+      { 
+        title: 'CarVisory',
+        details: 'Details will be out once the project is in beta',
+        completedYear: 'in-progress',
+        dateTag: 'Apr \'18',
+        link: 'http://itisamystery.com',
+        dotColor: 'bg-swift',
+        dateColor: 'color-swift',
+        tech: [
+          { title: 'Swift', style: 'normal', class: 'bg-swift'},
+          { title: 'iOS', style: 'primary', class: ''},
+        ]
+      },
 
       { 
         title: 'iOS Playgrounds',
@@ -75,8 +88,8 @@ class App extends Component {
       {
         title: 'Grow with Google',
         details: 'A scholarship to learn Android Development from Google and Udacity',
-        completedYear: 'in-progress',
-        dateTag: 'Feb \'18',
+        completedYear: '2018',
+        dateTag: 'Apr 13th',
         link: 'https://www.udacity.com/grow-with-google',
         dotColor: 'bg-java',
         dateColor: 'color-java',
@@ -267,9 +280,22 @@ class App extends Component {
     ],
     career: [
       {
+        logo: BigNerdRanch,
+        title: "Software Engineer",
+        dates: "04-2018 | ...",
+        company: "Big Nerd Ranch",
+        description: "Working as an iOS Developer on many client projects, also contribute to the Web team and their projects both front end and back.",
+        tech: [
+          {id: 'swift', image: 'swift.svg'},
+          {id: 'ios', image: 'apple.svg'},
+          {id: 'javascript', image: 'javascript.svg'},
+          {id: 'vuejs', image: 'vue.svg'}
+        ]
+      },
+      {
         logo: Udacity,
         title: "Mentor & Reviewer",
-        dates: "10-2017 | ...",
+        dates: "10-2017 | 04-2018",
         company: "Udacity",
         description: "Working 1-on-1 with students in the React program to help them make progress, keep on track, and reach graduation. I also review projects students submitted for their certification.",
         tech: [
