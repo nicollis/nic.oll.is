@@ -9,7 +9,7 @@ export default [
     title: "Software Engineer",
     dates: "04-2018 | ...",
     company: "Big Nerd Ranch",
-    description: "Working as an iOS Developer on many client projects, also contribute to the Web team and their projects both front end and back.",
+    description: "Working as an iOS Developer on many client projects, also contribute to the Web team and Android team on internal and client projects.",
     tech: [
       {id: 'swift', image: 'swift.svg'},
       {id: 'ios', image: 'apple.svg'},

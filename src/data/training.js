@@ -16,6 +16,17 @@ export default [
     ]
   },
   {
+    logo: BigNerdRanch,
+    title: "Android Essentials w/ Kotlin",
+    link: "https://www.bignerdranch.com/bootcamps/courses/android-essentials-with-kotlin/",
+    company: "Big Nerd Ranch",
+    description: "Learned the Kotlin language and built Android applications that took advantage of many core framework and features like tablet support, networking, databases, accessibility, and localization.",
+    tech: [
+      {id: 'kotlin', image: 'kotlin.svg'},
+      {id: 'android', image: 'android-icon.svg'},
+    ]
+  },
+  {
     logo: Udacity,
     title: "Android Development",
     link: "https://www.udacity.com/grow-with-google",
