@@ -32,10 +32,10 @@ class App extends Component {
 
           <Section title="Techinical Toolbox">
             <Col md={8} mdOffset={2} id="toolbox">
-              <ToolboxShelf title='High Level' tools={this.state.toolbox.filter((tool) => { return tool.level === 'high' })} />
-              <ToolboxShelf title='Mid Level' tools={this.state.toolbox.filter((tool) => { return tool.level === 'mid' })} />
-              <ToolboxShelf title='Low Level' tools={this.state.toolbox.filter((tool) => { return tool.level === 'low' })} />
-              <ToolboxShelf title='Deploy' tools={this.state.toolbox.filter((tool) => { return tool.level === 'deploy' })} />
+              <ToolboxShelf title='High Level' tools={this.state.toolbox.high} />
+              <ToolboxShelf title='Mid Level' tools={this.state.toolbox.mid} />
+              <ToolboxShelf title='Low Level' tools={this.state.toolbox.low} />
+              <ToolboxShelf title='Deploy' tools={this.state.toolbox.deploy} />
             </Col>
           </Section>
 
