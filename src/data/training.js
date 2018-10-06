@@ -1,4 +1,4 @@
-import * as $ from './tech'
+import * as $ from '../models/tech'
 import Udacity from '../images/udacity.png'
 import BigNerdRanch from '../images/BigNerdRanch.png'
 

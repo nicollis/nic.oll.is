@@ -1,55 +1,29 @@
-export default [
-      { // EXAMPLE EVENT
-        title: '',
-        details: '',
-        completedYear: 'example',
-        dateTag: '',
-        link: '',
-        dotColor: '',
-        dateColor: '',
-        tech: [
-          { title: '', style: '', class: ''},
-        ]
-      },
-      { 
-        title: 'CarVisory',
-        details: 'Details will be out once the project is in beta',
-        completedYear: 'in-progress',
-        dateTag: 'Apr \'18',
-        link: 'http://itisamystery.com',
-        dotColor: 'bg-swift',
-        dateColor: 'color-swift',
-        tech: [
-          { title: 'Swift', style: 'normal', class: 'bg-swift'},
-          { title: 'iOS', style: 'primary', class: ''},
-        ]
-      },
+import { iOSProject, AndroidProject } from '../../models/projects'
 
-      { 
+export default [
+      new iOSProject({ 
+          title: 'CarVisory',
+          detail: 'Details will be out once the project is in beta',
+          inProgress: true,
+          date: 'April 01 2018',
+          link: 'http://itisamystery.com'
+        }),
+
+      new iOSProject({ 
         title: 'iOS Playgrounds',
-        details: 'An group of playgrounds of small examples of experimenting with iOS development',
-        completedYear: 'in-progress',
-        dateTag: 'Jan \'18',
+        detail: 'An group of playgrounds of small examples of experimenting with iOS development',
+        inProgress: true,
+        date: 'Jan 20 2018',
         link: 'https://github.com/nicollis/iOS-Playgrounds',
-        dotColor: 'bg-swift',
-        dateColor: 'color-swift',
-        tech: [
-          { title: 'Swift', style: 'normal', class: 'bg-swift'},
-          { title: 'iOS', style: 'primary', class: ''},
-          { title: 'CoreML', style: 'info', class: ''},
-          { title: 'ARKit', style: 'info', class: ''},
-        ]
-      },
-      {
+        tech: [ 'CoreML', 'ARKit' ]
+      }),
+      
+      new AndroidProject({
         title: 'Grow with Google',
-        details: 'A scholarship to learn Android Development from Google and Udacity',
-        completedYear: '2018',
-        dateTag: 'Apr 13th',
+        detail: 'A scholarship to learn Android Development from Google and Udacity',
+        date: 'April 13 2018',
+        kotlin: false,
+        java: true,
         link: 'https://www.udacity.com/grow-with-google',
-        dotColor: 'bg-java',
-        dateColor: 'color-java',
-        tech: [
-          { title: 'Java', style: 'normal', class: 'bg-java' },
-          { title: 'Android', style: 'primary' },        ]
-      },
+      }),
 ]

@@ -1,4 +1,4 @@
-import * as $ from './tech'
+import * as $ from '../models/tech'
 
 export default {
   high: [
