@@ -1,9 +1,9 @@
 import Project from './Project'
 
 export default class Android extends Project {
-  dotColor = 'bg-java'
-  dateColor = 'color-java'
-  languageBadge = {title: 'Kotlin', style: 'normal', class: 'bg-java'}
+  dotColor = 'bg-kotlin'
+  dateColor = 'color-kotlin'
+  languageBadge = {title: 'Kotlin', style: 'normal', class: 'bg-kotlin'}
   javaLanguageBadge = {title: 'Java', style: 'normal', class: 'bg-java'}
   platformBadge = {title: 'Android', style: 'primary', class: ''}
   tech = []
@@ -23,6 +23,11 @@ export default class Android extends Project {
 
     if (object.java)
       this.tech.push(this.javaLanguageBadge)
+
+    if (object.java && object.kotlin === false) {
+      this.dotColor = 'bg-java'
+      this.dateColor = 'color-java'
+    }
 
     this.tech.push(this.platformBadge)
   }

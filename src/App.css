@@ -113,6 +113,14 @@ a:visited{color: black;}
   background: #5E94AF !important;
 }
 
+.color-kotlin {
+  color: #6C54DC !important;
+}
+
+.bg-kotlin {
+  background: #6C54DC !important;
+}
+
 .color-js{
   color: #dccb43 !important;
 }
