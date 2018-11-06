@@ -8,6 +8,14 @@
   font-family: 'Raleway', sans-serif;
 }
 
+html{
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
 body {
   background: #F4F8FA;
   font-family: 'Lato', sans-serif;
@@ -79,6 +87,11 @@ a:visited{color: black;}
     .header-center-image {
         text-align: right;
     }
+}
+
+
+.timeline dl dd .circ {
+  z-index: 0 !important;
 }
 
 .color-coral, .color-ruby{
