@@ -26,8 +26,6 @@ class App extends Component {
       <div>
         <div className="container max">
 
-          <Header />
-
           <Bio />
 
           <Section title="Techinical Toolbox">

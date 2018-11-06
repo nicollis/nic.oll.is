@@ -11,6 +11,7 @@
 body {
   background: #F4F8FA;
   font-family: 'Lato', sans-serif;
+  margin-top: 25px;
 }
 
 hr {
@@ -170,8 +171,7 @@ a:visited{color: black;}
 
 .profile-pic{
   border-radius: 50%;
-  border: #CCD1D9 8px solid;
-  width: 280px;
+  width: 260px;
 }
 .pb-left{
   border-left: 6px solid #DA4453;
