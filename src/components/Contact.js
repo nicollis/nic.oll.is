@@ -7,7 +7,7 @@ const Contact = (props) => {
   return (
     <Col xs={6} md={3} className="contact-wrapper">
       <a href={props.to} target="_blank" rel="noopener noreferrer">
-        <FontAwesome icon={props.icon} size={3} class='color-coral' />
+        <FontAwesome icon={props.icon} size={3} brand={props.brand} class='color-coral' />
       </a>
     </Col>
   )
@@ -16,6 +16,7 @@ const Contact = (props) => {
 Contact.propTypes = {
   to: PropTypes.string.isRequired,
   icon: PropTypes.string.isRequired,
+  brand: PropTypes.boolean,
 }
 
 export default Contact
