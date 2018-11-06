@@ -47,7 +47,7 @@ class App extends Component {
             { this.state.training.map((training) => {return(<Training details={training}/>)}) }
           </Section>
 
-          <Section title='Projects Roadmap'>
+          <Section title='Timeline'>
             <Col xs={12}>
               <Timeline events={this.state.events}/>
             </Col>

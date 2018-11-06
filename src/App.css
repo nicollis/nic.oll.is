@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Raleway|Inconsolata');
 @import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/bootflat/2.0.4/css/bootflat.css');
-@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css');
+@import url('https://use.fontawesome.com/releases/v5.5.0/css/all.css');
 
 
 .header, h1, h2, h3, h4, h5, .panel-heading {
@@ -214,6 +214,16 @@ a:visited{color: black;}
 }
 .events, .repo{
   transition: all 0.2s ease-out;
+}
+
+.project {
+  background-color: firebrick !important;
+}
+.blog {
+  background-color: dodgerblue !important;
+}
+.video {
+  background-color: seagreen !important;
 }
 
 .top-padding {

@@ -1,12 +1,13 @@
 import { iOSProject, AndroidProject } from '../../models/projects'
 
 export default [
-  new AndroidProject({
-    title: 'Bookie',
-    detail: 'Internal tablet application at BNR that controls the conference rooms schedule',
-    inProgress: true,
-    date: 'Sept 30 2018',
-    link: 'https://bignerdranch.com/'
+  new iOSProject({ 
+    title: 'Custom filters with Core Image Kernel Language',
+    detail: 'Published on Big Nerd Ranch\'s Blog',
+    date: 'November 6 2018',
+    link: 'https://bignerdranch.com/blog/creating-custom-filters-using-core-image-kernel-language/',
+    tech: [ 'CIKernel' ],
+    eventType: 'blog'
   }),
 
   new AndroidProject({
@@ -30,6 +31,14 @@ export default [
     link: 'https://github.com/nicollis/android-programming/tree/master/GeoQuiz'
   }),
 
+  new iOSProject({ 
+    title: 'Interview Coding Questions',
+    detail: 'Published on Program Practical\'s Youtube',
+    date: 'April 15 2018',
+    link: 'https://www.youtube.com/watch?v=fMqi-ZSZhPE',
+    eventType: 'video',
+  }),
+  
   new iOSProject({ 
     title: 'iOS Playgrounds',
     detail: 'An group of playgrounds of small examples of experimenting with iOS development',

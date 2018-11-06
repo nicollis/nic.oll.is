@@ -43,8 +43,13 @@ class TimeLine extends Component {
   render () {
     return (
       <div className='timeline'>
+        <div className="text-right">
+          <span className="badge project"><i className="fa fa-box-open fa-1x"/> Project</span>&nbsp;
+          <span className="badge blog"><i className="fa fa-pencil-alt fa-1x"/> Blog</span>&nbsp;
+          <span className="badge video"><i className="fa fa-video fa-1x"/> Video</span>
+        </div>
         <dl>
-          { this.processYear('In Progress', this.props.events.filter((event) => { return event.completedYear === 'in-progress' })) }
+          {/* { this.processYear('In Progress', this.props.events.filter((event) => { return event.completedYear === 'in-progress' })) } */}
           { this.processYear(2018, this.props.events.filter((event) => { return event.completedYear === '2018' })) }
           { this.processYear(2017, this.props.events.filter((event) => { return event.completedYear === '2017' })) }
           <dt>And More...</dt>

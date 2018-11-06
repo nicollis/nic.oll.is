@@ -10,9 +10,20 @@ export default class Project {
     inProgress,
     date,
     link,
-    tech
+    tech,
+    eventType
   }
   ) {
+    this.eventType = eventType || 'project';
+
+    if (this.eventType == 'blog') {
+      this.eventIcon = 'pencil-alt';
+    } else if (this.eventType == 'video') {
+      this.eventIcon = 'video';
+    } else {
+      this.eventIcon = 'box-open';
+    }
+
     this.date = new Date(date);
 
     this.title = title;
