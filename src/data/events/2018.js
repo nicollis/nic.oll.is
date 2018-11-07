@@ -79,4 +79,12 @@ export default [
     java: true,
     link: 'https://www.udacity.com/grow-with-google',
   }),
+
+  new iOSProject({ 
+    title: 'Localizing UI\'s with Right-to-Left Languages',
+    detail: 'Published on Program Practical\'s Youtube',
+    date: 'April 3 2018',
+    link: 'https://youtu.be/F7ktdqwk-_o',
+    eventType: 'video',
+  }),
 ]
