@@ -11,17 +11,17 @@ export default {
   ],
 
   mid: [
+    $.Python,
     $.Kotlin,
     $.Android,
     $.Vue,
-    $.Java,
     $.ObjC,
     $.CPP,
   ],
 
   low: [
     $.Elixir,
-    $.Python,
+    $.Java,
     $.C,
     $.PHP,
     $.NodeJs,
@@ -29,11 +29,11 @@ export default {
   ],
 
   deploy: [
+    $.Jupyter,
     $.Capistrano,
     $.Heroku,
     $.Saltstack,
     $.GoogleCloud,
-    $.Firebase,
     $.AWS
   ]
 }

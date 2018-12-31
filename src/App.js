@@ -56,12 +56,12 @@ class App extends Component {
               <Col md={6} mdOffset={3} className="contact-icons text-center">
                 <Contact to='mailto:nic@oll.is'  icon='at' brand='false' />
                 <Contact to='http://twitter.com/nic_ollis' icon='twitter'  brand='true'/>
+                <Contact to='https://www.kaggle.com/nicollis' icon='kaggle' brand='true'/>
                 <Contact to='https://medium.com/program-practical' icon='medium' brand='true'/>
                 <Contact to='https://www.youtube.com/c/programpracticaltv' icon='youtube' brand='true'/>
                 <Contact to='https://www.linkedin.com/in/nicollis' icon='linkedin' brand='true'/>
                 <Contact to='https://github.com/nicollis' icon='github'  brand='true'/>
                 <Contact to='https://stackoverflow.com/story/ollis' icon='stack-overflow' brand='true'/>
-                <Contact to='https://calendly.com/nollis' icon='calendar-alt' />
               </Col>
             </Col>
           </Section>

@@ -144,6 +144,19 @@ a:visited{color: black;}
   color: #616161;
 }
 
+.color-ml{
+  color: #CD460C !important;
+}
+
+.bg-ml {
+  background: #CD460C !important;
+}
+
+.bg-python {
+  background: #2A5C91 !important;
+}
+
+
 .icons{
   font-size: 5.5em;
   text-align: center;

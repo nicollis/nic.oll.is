@@ -1,6 +1,7 @@
 import { iOSProject, AndroidProject } from '../../models/projects'
 
 export default [
+
   new iOSProject({ 
     title: 'Custom filters with Core Image Kernel Language',
     detail: 'Published on Big Nerd Ranch\'s Blog',

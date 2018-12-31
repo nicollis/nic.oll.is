@@ -22,9 +22,9 @@ const Bio = () => {
         <Col md={8} mdOffset={2} className="text-left">
           <div className="about"><FontAwesome icon='quote-left' size={3}/>&nbsp;&nbsp;&nbsp;
           Hi, I’m Nic, a <code>Software Engineer</code> located in Indianapolis, Indiana, who loves creating amazing applications.
-          I develop solutions for not only the <code>mobile</code> but <code>server and web</code> as well. I have a passion for <code>fostering developer growth</code> 
+          My main focus is developing <code>mobile</code> and <code>machine learning</code> solutions. I have a passion for <code>fostering developer growth</code> 
           and do so, through mentorships, speaking to groups, and creating tutorials. Looking for a new dev to join your team, 
-          or wanting to build a new app/launch a new site? <a href="#contact"><code>Let's chat</code></a>.</div>
+          or wanting to build a new app/launch something delightful? <a href="#contact"><code>Let's chat</code></a>.</div>
         </Col>
       </div>
     </Row>
