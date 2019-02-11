@@ -11,7 +11,7 @@ FontAwesome.propTypes = {
   icon: PropTypes.string.isRequired,
   size: PropTypes.number,
   class: PropTypes.string,
-  brand: PropTypes.boolean,
+  brand: PropTypes.bool,
 }
 
 export default FontAwesome

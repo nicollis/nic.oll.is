@@ -16,7 +16,7 @@ const Contact = (props) => {
 Contact.propTypes = {
   to: PropTypes.string.isRequired,
   icon: PropTypes.string.isRequired,
-  brand: PropTypes.boolean,
+  brand: PropTypes.bool,
 }
 
 export default Contact
