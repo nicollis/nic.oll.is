@@ -20,10 +20,10 @@ export default {
   ],
 
   low: [
+    $.R,
     $.Elixir,
     $.Java,
     $.C,
-    $.PHP,
     $.NodeJs,
     $.CSharp
   ],
