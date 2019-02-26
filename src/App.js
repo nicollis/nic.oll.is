@@ -3,7 +3,8 @@ import { Col } from 'react-bootstrap';
 import Header from './components/Header'
 import Bio from './components/Bio'
 import Section from './components/Section'
-import ToolboxShelf from './components/ToolboxShelf'
+import Specialization from './components/Specialization'
+import Logo from './components/Logo/Logo'
 import Timeline from './components/Timeline'
 import Job from './components/Job'
 import Training from './components/Training'
@@ -15,6 +16,7 @@ import * as $ from './data'
 
 class App extends Component {
   state = {
+    specializations: $.Specializations,
     toolbox: $.Toolset,
     events: $.Events,
     career: $.Jobs,
@@ -28,12 +30,16 @@ class App extends Component {
 
           <Bio />
 
-          <Section title="Techinical Toolbox">
-            <Col md={8} mdOffset={2} id="toolbox">
-              <ToolboxShelf title='High Level' tools={this.state.toolbox.high} />
-              <ToolboxShelf title='Mid Level' tools={this.state.toolbox.mid} />
-              <ToolboxShelf title='Low Level' tools={this.state.toolbox.low} />
-              <ToolboxShelf title='Deploy' tools={this.state.toolbox.deploy} />
+          <Section title="Specializations">
+            <Col md={8} mdOffset={2} id="specializations">
+              { Object.values(this.state.specializations).map((spec) => {
+                return <Specialization data={spec}/>
+              }) }
+            </Col>
+            <Col md={8} mdOffset={2} id="history">
+              <hr/>
+              <h3 class="h6">History with:</h3>
+              { this.state.toolbox.history.map((icon) => {return <Logo small key={icon.id} image={icon.image} alt={`#{icon.id} logo`}/>}) }
             </Col>
           </Section>
 
