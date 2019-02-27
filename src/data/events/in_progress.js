@@ -6,7 +6,7 @@ export default [
     title: 'Computer Vision Training',
     detail: '3 month training program from Udacity on Computer Vision',
     date: 'March 26 2019',
-    link: 'https://github.com/nicollis/ML-Playgrounds',
+    link: '/Udacity-Computer-Vision-Nanodegree-Syllabus.pdf',
     tech: ['PyTrouch']
   }),
   new MLProject({
