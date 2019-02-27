@@ -27,7 +27,7 @@ hr {
 }
 
 .row {
-  padding-bottom: 50px;
+  padding-bottom: 20px;
 }
 
 .no-padding {
@@ -265,8 +265,8 @@ a:visited{color: black;}
 }
 
 .career-logo {
-  margin-top: 40px;
-  width: 100%;
+  margin-top: 52px;
+  width: 90%;
 }
 
 .career-left {
@@ -277,6 +277,15 @@ a:visited{color: black;}
 
 .career-right {
   display: inline-block;
+}
+
+.jobTitle {
+  font-size: 22px;
+  margin-bottom: 4px;
+}
+
+.jobDetails {
+  font-size: 16px;
 }
 
 
