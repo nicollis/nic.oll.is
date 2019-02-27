@@ -8,14 +8,14 @@ const Job = (props) => {
   return (
     <Row>
       <Col sm={8} smOffset={2}>
-          <Col xs={6} xsOffset={3} mdOffset={0} md={4}>
+          <Col xs={4} xsOffset={4} mdOffset={0} md={3}>
             <img className="career-logo" src={logo} />
           </Col>
           <Col xs={12} md={8}>
-            <h3>{title} <span className="color-ruby"> {company}</span></h3>
-            <strong className="h5 color-ruby">{dates}</strong>
-            <h4>{description}</h4>
-            <strong className="h4">Tech Used:</strong>
+            <h3 className="jobTitle">{title} <span className="color-ruby"> {company}</span></h3>
+            <strong className="h6 color-ruby">{dates}</strong>
+            <h6 className="jobDetails">{description}</h6>
+            <strong className="h5">Tech Used:</strong>
             <br/>
             { tech.map((tool) => {return(<Logo image={tool.image} alt={tool.id} small />)}) }
           </Col>
