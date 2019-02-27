@@ -1,39 +1,13 @@
 import * as $ from '../models/tech'
 
 export default {
-  high: [
-    $.Swift,
-    $.Apple,
-    $.Ruby,
-    $.Rails,
-    $.Javascript,
-    $.React
-  ],
-
-  mid: [
-    $.Python,
-    $.Kotlin,
-    $.Android,
-    $.Vue,
-    $.ObjC,
-    $.CPP,
-  ],
-
-  low: [
-    $.R,
+  history: [
     $.Elixir,
     $.Java,
     $.C,
     $.NodeJs,
-    $.CSharp
+    $.CSharp,
+    $.PHP,
+    $.Redis
   ],
-
-  deploy: [
-    $.Jupyter,
-    $.Capistrano,
-    $.Heroku,
-    $.Saltstack,
-    $.GoogleCloud,
-    $.AWS
-  ]
 }

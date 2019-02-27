@@ -89,6 +89,9 @@ a:visited{color: black;}
     }
 }
 
+.specialization {
+  padding-bottom: 20px;
+}
 
 .timeline dl dd .circ {
   z-index: 0 !important;
@@ -166,6 +169,12 @@ a:visited{color: black;}
   width: 77px;
   height: 77px;
   margin: 0 10px;
+}
+
+.logo-medium {
+  width: 45px;
+  height: 45px;
+  margin: 5px 3px;
 }
 
 .logo-small {
