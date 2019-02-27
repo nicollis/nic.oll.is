@@ -48,7 +48,6 @@ export default [
       $.Android,
       $.Elixir,
       $.Postgres,
-      $.Saltstack
     ]
   },
   {
@@ -63,7 +62,6 @@ export default [
       $.Javascript,
       $.Angular,
       $.Postgres,
-      $.Capistrano
     ]
   }
 ]

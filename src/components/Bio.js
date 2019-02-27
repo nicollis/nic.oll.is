@@ -20,7 +20,7 @@ const Bio = () => {
           </Row>
         </div>
         <Col md={8} mdOffset={2} className="text-left">
-          <div className="about"><FontAwesome icon='quote-left' size={3}/>&nbsp;&nbsp;&nbsp;
+          <div className="about"><FontAwesome icon='quote-left' size={2}/>&nbsp;&nbsp;&nbsp;
           Hi, I’m Nic, a <code>Software Engineer</code> located in Indianapolis, Indiana, who loves creating amazing applications.
           My main focus is developing <code>mobile</code> and <code>machine learning</code> solutions. I have a passion for <code>fostering developer growth</code> 
           and do so, through mentorships, speaking to groups, and creating tutorials. Looking for a new dev to join your team, 
