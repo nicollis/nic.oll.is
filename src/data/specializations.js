@@ -22,28 +22,6 @@ export default {
       }
     ]
   },
-  ml: {
-    title: 'Machine Learning',
-    classifications: [
-      {
-        name: 'Libraries',
-        icons: [
-          $.Keras,
-          $.TensorFlow,
-          $.Pytorch,
-          $.ScikitLearn,
-        ]
-      },
-      {
-        name: 'Languages',
-        icons: [
-          $.Python,
-          $.R,
-          $.CPP
-        ]
-      }
-    ]
-  },
   web: {
     title: 'Web',
     classifications: [
