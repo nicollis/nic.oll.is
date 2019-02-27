@@ -8,16 +8,16 @@ const Training = (props) => {
   return (
     <Row>
       <Col sm={8} smOffset={2}>
-        <Col xs={12} md={8}>
+        <Col xs={12} sm={8}>
           <a className="training-link" href={link} target="_blank" rel="noopener noreferrer">
-            <h3>{title} <span className="color-ruby"> {company}</span></h3>
+            <h3 className="jobTitle">{title} <span className="color-ruby"> {company}</span></h3>
           </a>
-            <h4>{description}</h4>
-            <strong className="h4">Tech Used:</strong>
+            <h6>{description}</h6>
+            <strong className="h5">Tech Used:</strong>
             <br/>
             { tech.map((tool) => {return(<Logo image={tool.image} alt={tool.id} small />)}) }
           </Col>
-          <Col xs={6} xsOffset={3} mdOffset={0} md={4}>
+          <Col className="hidden-xs"  smOffset={0} sm={3}>
             <img className="career-logo" src={logo} />
           </Col>
 
