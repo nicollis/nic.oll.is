@@ -7,7 +7,7 @@ export default [
     detail: '3 month training program from Udacity on Computer Vision',
     date: 'March 26 2019',
     link: '/Udacity-Computer-Vision-Nanodegree-Syllabus.pdf',
-    tech: ['PyTrouch']
+    tech: ['PyTorch']
   }),
   new MLProject({
     inProgress: true,
