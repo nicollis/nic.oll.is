@@ -1,5 +1,6 @@
 {
   "version": 2,
   "name": "nic.oll.is",
+  "alias": ["nic.oll.is", "nick.oll.is", "nicholas.oll.is"],
   "builds": [{ "src": "package.json", "use": "@now/static-build", "config": {"distDir": "build" }}]
 }
