@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
 const Section = (props) => {
   return (
     <Row>
-      <h2 className='text-center'>{props.title}</h2>
+      <h2 id={props.title.toLowerCase()} className='text-center'>{props.title}</h2>
       <hr />
       { props.children }
     </Row>
