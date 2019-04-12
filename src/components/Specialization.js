@@ -13,7 +13,7 @@ const Specialization = (props) => {
         return <Col sm={4} md={6}>
           <h4>{classification.name}:</h4> 
           { classification.icons.map((icon) => {
-            return <Logo medium key={icon.id} image={icon.image} alt={`#{icon.id} logo`}/>
+            return <Logo medium key={icon.id} image={icon.image} alt={icon.id}/>
           }) }
         </Col>
       }) }

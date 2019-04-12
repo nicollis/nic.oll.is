@@ -9,7 +9,7 @@ export default {
         icons: [
           $.Apple,
           $.Android,
-          $.React
+          $.ReactNative
         ]
       },
       {

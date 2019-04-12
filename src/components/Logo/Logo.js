@@ -11,7 +11,7 @@ const logos = importAll(require.context('./logos', false, /\.(png|jpe?g|svg)$/))
 
 const Logo = (props) => {
   return (
-    <img className={`logos ${props.small && 'logo-small'} ${props.medium && 'logo-medium'}`} src={logos[props.image]} alt={props.alt} />
+    <img title={props.alt} className={`logos ${props.small && 'logo-small'} ${props.medium && 'logo-medium'}`} src={logos[props.image]} alt={props.alt} />
   )
 }
 
