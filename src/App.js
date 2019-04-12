@@ -39,7 +39,7 @@ class App extends Component {
             <Col md={8} mdOffset={2} id="history">
               <hr/>
               <h3 class="h6">History with:</h3>
-              { this.state.toolbox.history.map((icon) => {return <Logo small key={icon.id} image={icon.image} alt={`#{icon.id} logo`}/>}) }
+              { this.state.toolbox.history.map((icon) => {return <Logo small key={icon.id} image={icon.image} alt={icon.id}/>}) }
             </Col>
           </Section>
 
