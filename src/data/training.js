@@ -4,6 +4,19 @@ import BigNerdRanch from '../images/BigNerdRanch.png'
 
 export default [
   {
+    logo: Udacity,
+    title: "Computer Vision",
+    link: "/Udacity-Computer-Vision-Nanodegree-Syllabus.pdf",
+    company: "Udacity",
+    description: "Learned the underlying math and programming concepts that drive pattern recognition, objact and image classification task, and object tracking systems. Covered latest deep learning architecturs and combined deep learning and computer vision to power a variety of task.",
+    tech: [
+      $.Python,
+      $.Pytorch,
+      $.CPP,
+      $.Jupyter
+    ]
+  },
+  {
     logo: BigNerdRanch,
     title: "Advanced iOS",
     link: "/20181106-oe-syllabus-advanced-ios.pdf",
