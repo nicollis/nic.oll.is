@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Col } from 'react-bootstrap';
-import Header from './components/Header'
 import Bio from './components/Bio'
 import Section from './components/Section'
 import Specialization from './components/Specialization'
@@ -20,7 +19,7 @@ class App extends Component {
     toolbox: $.Toolset,
     events: $.Events,
     career: $.Jobs,
-    training: $.Training 
+    training: $.Training
   }
 
   render() {

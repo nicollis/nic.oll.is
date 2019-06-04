@@ -7,7 +7,7 @@ const Contact = (props) => {
   return (
     <Col xs={6} md={3} className="contact-wrapper">
       <a href={props.to} target="_blank" rel="noopener noreferrer">
-        <FontAwesome icon={props.icon} size={3} brand={props.brand} class='color-coral' />
+        <FontAwesome icon={props.icon} size={3} brand={props.brand} class='primary-color' />
       </a>
     </Col>
   )
