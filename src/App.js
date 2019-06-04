@@ -66,7 +66,7 @@ class App extends Component {
                 <Contact to='https://www.youtube.com/c/programpracticaltv' icon='youtube' brand='true'/>
                 <Contact to='https://www.linkedin.com/in/nicollis' icon='linkedin' brand='true'/>
                 <Contact to='https://github.com/nicollis' icon='github'  brand='true'/>
-                <Contact to='https://stackoverflow.com/story/ollis' icon='stack-overflow' brand='true'/>
+                <Contact to='https://www.twitch.tv/programpractical' icon='twitch' brand='true'/>
               </Col>
             </Col>
           </Section>
