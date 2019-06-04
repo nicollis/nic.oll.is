@@ -10,7 +10,7 @@ const Training = (props) => {
       <Col sm={8} smOffset={2}>
         <Col xs={12} sm={8}>
           <a className="training-link" href={link} target="_blank" rel="noopener noreferrer">
-            <h3 className="jobTitle">{title} <span className="color-ruby"> {company}</span></h3>
+            <h3 className="jobTitle">{title} <span className="primary-color"> {company}</span></h3>
           </a>
             <h6>{description}</h6>
             <strong className="h5">Tech Used:</strong>
@@ -18,7 +18,7 @@ const Training = (props) => {
             { tech.map((tool) => {return(<Logo image={tool.image} alt={tool.id} small />)}) }
           </Col>
           <Col className="hidden-xs"  smOffset={0} sm={3}>
-            <img className="career-logo" src={logo} />
+            <img className="career-logo" alt={logo} src={logo} />
           </Col>
 
       </Col>

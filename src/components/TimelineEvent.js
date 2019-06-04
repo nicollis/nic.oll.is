@@ -6,8 +6,8 @@ const TimelineEvent = (props) => {
   const { event, pull } = props
   return (
     <dd className={`${ pull } clearfix`}>
-      <div className={`circ ${ event.dotColor || 'bg-coral' }`}></div>
-      <div className={`time ${ event.dateColor || 'color-coral' }`}>{event.dateTag}</div>
+      <div className={`circ ${ event.dotColor || 'primary-background-color' }`}></div>
+      <div className={`time ${ event.dateColor || 'primary-color' }`}>{event.dateTag}</div>
       <a className="events" href={event.link} target="_blank" rel="noopener noreferrer">
         <div className="events-body">
           <h4 className="events-heading">{event.title} <span className={`badge ${event.eventType}`}><FontAwesome icon={event.eventIcon}/></span></h4>

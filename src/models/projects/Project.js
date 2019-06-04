@@ -16,9 +16,9 @@ export default class Project {
   ) {
     this.eventType = eventType || 'project';
 
-    if (this.eventType == 'blog') {
+    if (this.eventType === 'blog') {
       this.eventIcon = 'pencil-alt';
-    } else if (this.eventType == 'video') {
+    } else if (this.eventType === 'video') {
       this.eventIcon = 'video';
     } else {
       this.eventIcon = 'box-open';
@@ -30,12 +30,12 @@ export default class Project {
     this.details = detail;
     this.link = link;
     this.tech = tech;
-    
+
     this.completedYear = (inProgress) ? 'in-progress' : null || this.date.getFullYear().toString();
     this.dateTag = (inProgress) ? this.date.toLocaleDateString(
         'en-us',
         {month: 'long'}
-      ) : 
+      ) :
       this.date.toLocaleDateString(
         'en-us',
         {month: 'short', day: '2-digit'}

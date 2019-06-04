@@ -9,11 +9,11 @@ const Job = (props) => {
     <Row>
       <Col sm={8} smOffset={2}>
           <Col xs={4} xsOffset={4} mdOffset={0} md={3}>
-            <img className="career-logo" src={logo} />
+            <img className="career-logo" alt={logo} src={logo} />
           </Col>
           <Col xs={12} md={8}>
-            <h3 className="jobTitle">{title} <span className="color-ruby"> {company}</span></h3>
-            <strong className="h6 color-ruby">{dates}</strong>
+            <h3 className="jobTitle">{title} <span className="primary-color"> {company}</span></h3>
+            <strong className="h6 primary-color">{dates}</strong>
             <h6 className="jobDetails">{description}</h6>
             <strong className="h5">Tech Used:</strong>
             <br/>

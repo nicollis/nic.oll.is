@@ -58,7 +58,7 @@ class TimeLine extends Component {
         {/* GitHub Info */}
         <a className="col-md-6 col-md-offset-3" href="https://github.com/nicollis?tab=repositories" target="_blank" rel="noopener noreferrer">
           <div className="panel panel-default repo">
-            <div className="panel-heading bg-coral">
+            <div className="panel-heading primary-background-color">
               See more on GitHub
             </div>
             <div className="panel-body">
