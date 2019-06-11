@@ -3,6 +3,14 @@ import Web from "../../models/projects/Web";
 
 export default [
     new MLProject({
+       title: 'What is new in Core ML 3',
+       detail: 'WWDC 19 had some amazing updates, here is what you can expect in the new Core ML 3',
+       date: 'June 11 2019',
+       link:'https://www.bignerdranch.com/blog/whats-new-in-core-ml/',
+       tech: ['CoreML'],
+       eventType: 'blog'
+    }),
+    new MLProject({
         title: 'Computer Vision Training',
         detail: '3 month training program from Udacity on Computer Vision',
         date: 'May 30 2019',
