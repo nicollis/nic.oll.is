@@ -5,7 +5,7 @@ export default [
     new MLProject({
        title: 'What is new in Core ML 3',
        detail: 'WWDC 19 had some amazing updates, here is what you can expect in the new Core ML 3',
-       date: 'June 12 2019',
+       date: 'June 11 2019',
        link:'https://www.bignerdranch.com/blog/whats-new-in-core-ml/',
        tech: ['CoreML'],
        eventType: 'blog'
