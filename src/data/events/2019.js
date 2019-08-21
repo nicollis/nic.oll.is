@@ -3,6 +3,14 @@ import Web from "../../models/projects/Web";
 
 export default [
     new MLProject({
+       title: 'Deep Dive into Convolutional Filters',
+       detail: 'How do filters in convolutional layers work? Lets take a look using OpenCV',
+       date: 'Aug 20, 2019',
+       link: 'https://www.bignerdranch.com/blog/deep-dive-into-convolutional-filters/',
+        tech: ['OpenCV'],
+       eventType: 'blog'
+    }),
+    new MLProject({
         title: 'Using an eGPU on macOS',
         detail: 'eGPU support coming to macOS has been one of the best-overlooked features of the latest OS.',
         date: 'July 2, 2019',
