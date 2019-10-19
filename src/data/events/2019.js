@@ -3,6 +3,14 @@ import Web from "../../models/projects/Web";
 
 export default [
     new MLProject({
+       title: 'Implementing Swish Activation Function in Keras',
+       detail: 'What are activation functions and how to we implement our own in Keras',
+       date: 'September 17, 2019',
+       link: 'https://www.bignerdranch.com/blog/implementing-swish-activation-function-in-keras/',
+        tech: ['Keras'],
+       eventType: 'blog'
+    }),
+    new MLProject({
        title: 'Deep Dive into Convolutional Filters',
        detail: 'How do filters in convolutional layers work? Lets take a look using OpenCV',
        date: 'Aug 20, 2019',

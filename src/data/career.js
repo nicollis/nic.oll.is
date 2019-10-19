@@ -10,8 +10,12 @@ export default [
     title: "Software Engineer",
     dates: "04-2018 | ...",
     company: "Big Nerd Ranch",
-    description: "Working as an iOS Developer on many client projects, also contribute to the Web team and Android team on internal and client projects.",
+    description: "Leading the Computer Vision/Machine Learning efforts for our clients. Primarily on the iOS team, with contributions to the web team and trained in Android.",
     tech: [
+      $.Python,
+      $.TensorFlow,
+      $.Pytorch,
+      $.ScikitLearn,
       $.Swift,
       $.Apple,
       $.Javascript,
