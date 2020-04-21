@@ -32,22 +32,22 @@ class App extends Component {
           <Section title="Specializations">
             <Col md={8} mdOffset={2} id="specializations">
               { Object.values(this.state.specializations).map((spec) => {
-                return <Specialization data={spec}/>
+                return <Specialization data={spec} key={spec.title}/>
               }) }
             </Col>
             <Col md={8} mdOffset={2} id="history">
               <hr/>
-              <h3 class="h6">History with:</h3>
+              <h3 className="h6">History with:</h3>
               { this.state.toolbox.history.map((icon) => {return <Logo small key={icon.id} image={icon.image} alt={icon.id}/>}) }
             </Col>
           </Section>
 
           <Section title="Career Development">
-            { this.state.career.map((job) => {return(<Job details={job}/>)}) }
+            { this.state.career.map((job) => {return(<Job details={job} key={job.company}/>)}) }
           </Section>
 
           <Section title="Training">
-            { this.state.training.map((training) => {return(<Training details={training}/>)}) }
+            { this.state.training.map((training) => {return(<Training details={training} key={training.title}/>)}) }
           </Section>
 
           <Section title='Timeline'>

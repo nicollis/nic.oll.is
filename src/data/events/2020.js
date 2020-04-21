@@ -1,4 +1,4 @@
-import { MLProject, WebProject } from '../../models/projects'
+import { MLProject } from '../../models/projects'
 
 export default [
     new MLProject({

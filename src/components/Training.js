@@ -15,7 +15,7 @@ const Training = (props) => {
             <h6>{description}</h6>
             <strong className="h5">Tech Used:</strong>
             <br/>
-            { tech.map((tool) => {return(<Logo image={tool.image} alt={tool.id} small />)}) }
+            { tech.map((tool) => {return(<Logo image={tool.image} alt={tool.id} key={tool.id} small />)}) }
           </Col>
           <Col className="hidden-xs"  smOffset={0} sm={3}>
             <img className="career-logo" alt={logo} src={logo} />

@@ -3,7 +3,7 @@ import Project from './Project'
 export default class ML extends Project {
   dotColor = 'bg-ml'
   dateColor = 'color-ml'
-  languageBadge = {title: 'Python', style: 'normal', class: 'bg-python'}
+  languageBadge = {title: 'Python', style: 'info', class: 'bg-python'}
   platformBadge = {title: 'Jupyter', style: 'primary', class: 'bg-ml'}
 
   constructor(object) {
