@@ -50,9 +50,9 @@ class TimeLine extends Component {
         </div>
         <dl>
           { this.processYear('In Progress', this.props.events.filter((event) => { return event.completedYear === 'in-progress' })) }
+          { this.processYear(2020, this.props.events.filter((event) => { return event.completedYear === '2020' })) }
           { this.processYear(2019, this.props.events.filter((event) => { return event.completedYear === '2019' })) }
           { this.processYear(2018, this.props.events.filter((event) => { return event.completedYear === '2018' })) }
-          { this.processYear(2017, this.props.events.filter((event) => { return event.completedYear === '2017' })) }
           <dt>And More...</dt>
         </dl>
         {/* GitHub Info */}

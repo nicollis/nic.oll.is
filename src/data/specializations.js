@@ -1,27 +1,6 @@
 import * as $ from '../models/tech'
 
 export default {
-  mobile: {
-    title: 'Mobile',
-    classifications: [
-      {
-        name: 'Platforms',
-        icons: [
-          $.Apple,
-          $.Android,
-          $.ReactNative
-        ]
-      },
-      {
-        name: 'Languages',
-        icons: [
-          $.Swift,
-          $.Kotlin,
-          $.ObjC
-        ]
-      }
-    ]
-  },
   ml: {
     title: 'Machine Learning',
     classifications: [
@@ -40,6 +19,27 @@ export default {
           $.Python,
           $.R,
           $.CPP
+        ]
+      }
+    ]
+  },
+  mobile: {
+    title: 'Mobile',
+    classifications: [
+      {
+        name: 'Platforms',
+        icons: [
+          $.Apple,
+          $.Android,
+          $.ReactNative
+        ]
+      },
+      {
+        name: 'Languages',
+        icons: [
+          $.Swift,
+          $.Kotlin,
+          $.ObjC
         ]
       }
     ]
