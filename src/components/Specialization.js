@@ -10,7 +10,7 @@ const Specialization = (props) => {
       <h3>{ title }</h3>
       <hr/>
       { classifications.map((classification) => {
-        return <Col sm={4} md={6}>
+        return <Col sm={4} md={6} key={title+classification.name}>
           <h4>{classification.name}:</h4> 
           { classification.icons.map((icon) => {
             return <Logo medium key={icon.id} image={icon.image} alt={icon.id}/>
@@ -22,18 +22,20 @@ const Specialization = (props) => {
 }
 
 Specialization.propTypes = {
-  title: PropTypes.string.isRequired,
-  classifications: PropTypes.arrayOf(
-    PropTypes.shape({
-      name: PropTypes.string.isRequired,
-      icons: PropTypes.arrayOf(
-        PropTypes.shape({
-          id: PropTypes.string.isRequired,
-          image: PropTypes.string.isRequired,
-        })
-      ).isRequired
-    }).isRequired
-  ).isRequired,
+  data: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    classifications: PropTypes.arrayOf(
+      PropTypes.shape({
+        name: PropTypes.string.isRequired,
+        icons: PropTypes.arrayOf(
+          PropTypes.shape({
+            id: PropTypes.string.isRequired,
+            image: PropTypes.string.isRequired,
+          })
+        ).isRequired
+      }).isRequired
+    ).isRequired
+  }).isRequired
 }
 
 export default Specialization

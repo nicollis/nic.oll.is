@@ -17,7 +17,7 @@ const Job = (props) => {
             <h6 className="jobDetails">{description}</h6>
             <strong className="h5">Tech Used:</strong>
             <br/>
-            { tech.map((tool) => {return(<Logo image={tool.image} alt={tool.id} small />)}) }
+            { tech.map((tool) => {return(<Logo image={tool.image} alt={tool.id} key={tool.id} small />)}) }
           </Col>
 
       </Col>

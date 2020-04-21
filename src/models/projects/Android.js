@@ -3,8 +3,8 @@ import Project from './Project'
 export default class Android extends Project {
   dotColor = 'bg-kotlin'
   dateColor = 'color-kotlin'
-  languageBadge = {title: 'Kotlin', style: 'normal', class: 'bg-kotlin'}
-  javaLanguageBadge = {title: 'Java', style: 'normal', class: 'bg-java'}
+  languageBadge = {title: 'Kotlin', style: 'info', class: 'bg-kotlin'}
+  javaLanguageBadge = {title: 'Java', style: 'info', class: 'bg-java'}
   platformBadge = {title: 'Android', style: 'primary', class: ''}
   tech = []
 

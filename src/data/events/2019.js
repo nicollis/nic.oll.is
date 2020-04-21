@@ -45,7 +45,7 @@ export default [
         detail: 'implement SLAM (Simultaneous Localization and Mapping) for a 2 dimensional world',
         date: 'May 28 2019',
         link: 'https://github.com/nicollis/Graph-SLAM',
-        tech: ['Python', 'Robotics']
+        tech: ['Robotics']
     }),
     new MLProject({
         title: 'Image Captioning',

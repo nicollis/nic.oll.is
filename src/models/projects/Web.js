@@ -4,7 +4,7 @@ export default class Web extends Project {
   dotColor = 'bg-js'
   dateColor = 'color-js'
 
-  languageBadge = {title: 'JS', style: 'normal', class: 'bg-js'}
+  languageBadge = {title: 'JS', style: 'info', class: 'bg-js'}
 
   platformBadge = {title: 'React', style: 'primary', class: ''}
   reduxPlatformBadge = {title: 'Redux', style: 'info', class: ''}

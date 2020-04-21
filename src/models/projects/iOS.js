@@ -3,7 +3,7 @@ import Project from './Project'
 export default class iOS extends Project {
   dotColor = 'bg-swift'
   dateColor = 'color-swift'
-  languageBadge = {title: 'Swift', style: 'normal', class: 'bg-swift'}
+  languageBadge = {title: 'Swift', style: 'info', class: 'bg-swift'}
   platformBadge = {title: 'iOS', style: 'primary', class: ''}
 
   constructor(object) {
