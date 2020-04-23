@@ -1,6 +1,14 @@
-import { MLProject } from '../../models/projects'
+import { MLProject, iOSProject } from '../../models/projects'
 
 export default [
+    new iOSProject({
+      title: 'Multiple outputs with AVFoundation',
+       detail: 'How to capture multiple types of output from the cameras',
+       date: 'April 22, 2020',
+       link: 'https://www.bignerdranch.com/blog/multiple-outputs-with-avfoundation/',
+        tech: ['AVFoundation'],
+       eventType: 'blog'
+    }),
     new MLProject({
        title: 'Validating Proof of Concepts before Data Collection',
        detail: 'How we can validate an idea before collecting real world data',
