@@ -1,44 +1,45 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-import { Row, Col } from 'react-bootstrap'
-import Logo from './Logo/Logo'
+import {Row, Col} from 'react-bootstrap'
+import Images from '../images'
 
 const Job = (props) => {
-  const { logo, title, dates, company, description, tech } = props.details
-  return (
-    <Row>
-      <Col sm={8} smOffset={2}>
-          <Col xs={4} xsOffset={4} mdOffset={0} md={3}>
-            <img className="career-logo" alt={logo} src={logo} />
-          </Col>
-          <Col xs={12} md={8}>
-            <h3 className="jobTitle">{title} <span className="primary-color"> {company}</span></h3>
-            <strong className="h6 primary-color">{dates}</strong>
-            <h6 className="jobDetails">{description}</h6>
-            <strong className="h5">Tech Used:</strong>
-            <br/>
-            { tech.map((tool) => {return(<Logo image={tool.image} alt={tool.id} key={tool.id} small />)}) }
-          </Col>
+    const {logo, titles, task} = props.details
+    return (
+        <Row>
+            <Col>
+                <Row className="justify-content-md-center">
+                    <Col xs={12} sm={"auto"} className="career-logo-container">
+                        <img className="career-logo" alt={logo} src={Images[logo]}/>
+                    </Col>
 
-      </Col>
-      <Col xs={12} sm={10} smOffset={1}>
-        <hr/>
-      </Col>
-    </Row>
-  )
-}
-
-Job.propTypes = {
-  details: PropTypes.shape({
-    logo: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-    company: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired,
-    tech: PropTypes.arrayOf(PropTypes.shape({
-      id: PropTypes.any.isRequired,
-      image: PropTypes.string.isRequired
-    })).isRequired
-  }).isRequired
+                    <Col md={6}>
+                        <Row className="no-padding">
+                            <div><span className="h4 primary-color"> {props.key}</span></div>
+                        </Row>
+                        {Object.keys(titles).map((key) => {
+                            return <Row className="no-padding medium">
+                                <Col className="career-job-title">{key}</Col>
+                                <Col className="career-job-title primary-color text-align-right">{titles[key]}</Col>
+                            </Row>
+                        })}
+                    </Col>
+                </Row>
+                {Object.keys(task).map((key) => {
+                    return <Row className="justify-content-md-center">
+                        <Col md={8}>
+                            <h5>{key}</h5>
+                            {task[key].map((item) => {
+                                return <p className="jobDetails">• {item}</p>
+                            })}
+                        </Col>
+                    </Row>
+                })}
+            </Col>
+            <Col xs={12} sm={{span: 10, offset: 1}}>
+                <hr/>
+            </Col>
+        </Row>
+    )
 }
 
 export default Job

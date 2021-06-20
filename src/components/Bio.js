@@ -1,31 +1,32 @@
 import React from 'react'
 import { Row, Col } from 'react-bootstrap'
-import FontAwesome from './FontAwesome'
-import Me from '../images/Me.jpg'
+import Me from '../images/Memoji.png'
 
 const Bio = () => {
   return (
-    <Row>
+    <Row id="bio">
       <div id="home" className="text-center">
         <div className="container">
-          <Row>
-            <Col sm={5} smOffset={2} className="header-center-image">
-              <img src={Me} className="profile-pic" alt="profile pic" />
+          <Row className="justify-content-md-center">
+            <Col md={{span: "auto"}} className="header-center-title header">
+              <div className="first-name header-center-name">Nicholas&nbsp;</div>
+              <div className="last-name header-center-name">Ollis</div>
+              <div className="job-title primary-color">Senior Software Engineer<span style={{"color": "#434a54"}}>,</span></div>
+              <div className="job-title-sub sub-color">Machine Learning</div>
             </Col>
-            <Col sm={5} className="header-center-title header">
-              <div className="first-name header-center-name">Nic&nbsp;</div>
-              <div className="last-name header-center-name">Ollis<span className='cursor blinking-cursor' style={{position: 'absolute'}}>_</span></div>
-              <div className="job-title primary-color">Software Eng</div>
+            <Col md={{span: "auto"}} className="header-center-image">
+              <div style={{"backgroundImage": `url(${Me})`}} className="profile-pic" alt="profile pic" />
             </Col>
           </Row>
         </div>
-        <Col md={8} mdOffset={2} className="text-left">
-          <div className="about"><FontAwesome icon='quote-left' size={2}/>&nbsp;&nbsp;&nbsp;
-          Hi, I’m Nic, a <code>Polyglot Software Engineer</code> located in Indianapolis, Indiana;
-            specializing in <code>iOS</code> and <code>on-device machine learning</code> solutions. I have a passion for <code>fostering developer growth</code>
-          and do so, through mentoring, speaking to groups, and content creation. Looking for a new dev to join your team,
-          or wanting to build a new app/launch something delightful? <a href="#contact"><code>Let's chat</code></a>.</div>
-        </Col>
+        <Row className="justify-content-md-center">
+          <Col md={8} className="text-left">
+            <div className="about"><i className="bi bi-chat-right-quote primary-color"/>&nbsp;
+            Hi, I am Nic, a <code>Senior Software Engineer</code> located in "Chicago," Illinois,
+              specializing in <code>Machine Learning</code>. With a history in <code>iOS</code> and <code>Full Stack Web</code>,
+              in addition to taking models from concept to deployment; Looking for a new dev to join your team? <a href="#contact"><code>Let's chat</code></a>.</div>
+          </Col>
+        </Row>
       </div>
     </Row>
   )

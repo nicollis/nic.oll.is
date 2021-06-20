@@ -1,8 +1,8 @@
-import * as $ from '../models/tech'
-import Udacity from '../images/udacity.png'
-import BigNerdRanch from '../images/BigNerdRanch.png'
+import * as $ from '../../models/tech'
+import Udacity from '../../images/Udacity.png'
+import BigNerdRanch from '../../images/BigNerdRanch.png'
 
-export default [
+let training = [
   {
     logo: Udacity,
     title: "Computer Vision",
@@ -54,3 +54,5 @@ export default [
     ]
   },
 ]
+
+export default training;
