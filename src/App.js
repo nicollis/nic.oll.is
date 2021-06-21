@@ -2,9 +2,8 @@ import React, { Component } from 'react';
 import { Col } from 'react-bootstrap';
 import Bio from './components/Bio'
 import Section from './components/Section'
+import KeySkill from "./components/KeySkill";
 import Specialization from './components/Specialization'
-import Logo from './components/Logo/Logo'
-import Timeline from './components/Timeline'
 import Job from './components/Job'
 import Training from './components/Training'
 import Contact from './components/Contact'
@@ -15,10 +14,9 @@ import * as $ from './data'
 
 class App extends Component {
   state = {
+    skills: $.Skills,
     specializations: $.Specializations,
-    toolbox: $.Toolset,
-    events: $.Events,
-    career: $.Jobs,
+    career: $.Career,
     training: $.Training
   }
 
@@ -29,45 +27,39 @@ class App extends Component {
 
           <Bio />
 
-          <Section title="Specializations">
-            <Col md={8} mdOffset={2} id="specializations">
-              { Object.values(this.state.specializations).map((spec) => {
-                return <Specialization data={spec} key={spec.title}/>
-              }) }
-            </Col>
-            <Col md={8} mdOffset={2} id="history">
-              <hr/>
-              <h3 className="h6">History with:</h3>
-              { this.state.toolbox.history.map((icon) => {return <Logo small key={icon.id} image={icon.image} alt={icon.id}/>}) }
+          <Section title="Key ML Skills">
+            <Col md={{span: 8}} id="skills">
+              { this.state.skills.map((skill) => {return <KeySkill key={skill.name} name={skill.name} color={skill.color} />})}
             </Col>
           </Section>
 
+          <Section title="Tech Toolbox" id="specializations">
+            { Object.values(this.state.specializations).map((spec) => {
+              return <Specialization data={spec} key={spec.title}/>
+            }) }
+          </Section>
+
           <Section title="Career Development">
-            { this.state.career.map((job) => {return(<Job details={job} key={job.company}/>)}) }
+            { Object.keys(this.state.career.Career).map((key) => {
+              let job = this.state.career.Career[key];
+              return(<Job details={job} key={key}/>)})
+            }
           </Section>
 
           <Section title="Training">
             { this.state.training.map((training) => {return(<Training details={training} key={training.title}/>)}) }
           </Section>
 
-          <Section title='Timeline'>
-            <Col xs={12}>
-              <Timeline events={this.state.events}/>
-            </Col>
-          </Section>
-
           <Section title="Contact & Social">
-            <Col xs={12} id="contact">
-              <Col md={6} mdOffset={3} className="contact-icons text-center">
-                <Contact to='mailto:nic@oll.is'  icon='at' brand='false' />
-                <Contact to='http://twitter.com/nic_ollis' icon='twitter'  brand='true'/>
-                <Contact to='https://www.kaggle.com/nicollis' icon='kaggle' brand='true'/>
-                <Contact to='https://medium.com/program-practical' icon='medium' brand='true'/>
-                <Contact to='https://www.youtube.com/c/programpracticaltv' icon='youtube' brand='true'/>
-                <Contact to='https://www.linkedin.com/in/nicollis' icon='linkedin' brand='true'/>
-                <Contact to='https://github.com/nicollis' icon='github'  brand='true'/>
-                <Contact to='https://www.twitch.tv/programpractical' icon='twitch' brand='true'/>
-              </Col>
+            <Col md={6} className="text-center">
+              <Contact to='mailto:nic@oll.is'  icon='at' brand='false' />
+              <Contact to='http://twitter.com/nic_ollis' icon='twitter'  brand='true'/>
+              <Contact to='https://www.kaggle.com/nicollis' icon='kaggle' brand='true'/>
+              <Contact to='https://medium.com/program-practical' icon='medium' brand='true'/>
+              <Contact to='https://www.youtube.com/c/programpracticaltv' icon='youtube' brand='true'/>
+              <Contact to='https://www.linkedin.com/in/nicollis' icon='linkedin' brand='true'/>
+              <Contact to='https://github.com/nicollis' icon='github'  brand='true'/>
+              <Contact to='https://www.twitch.tv/programpractical' icon='twitch' brand='true'/>
             </Col>
           </Section>
 
