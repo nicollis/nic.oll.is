@@ -3,8 +3,10 @@
 ### logo
 BigNerdRanch
 ### titles
-#### Senior Software Engineer, Machine Learning
-06-2018 | ...
+#### Solutions Architect, Machine Learning
+07-2021 | ...
+#### Senior Machine Learning Engineer
+06-2020 | 07-2021
 #### Software Engineer
 04-2018 | 06-2018
 
